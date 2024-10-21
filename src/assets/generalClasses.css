@@ -1,0 +1,17 @@
+/* General use classes */
+
+.flexRow {
+  display: flex;
+  /* direction specified for clarity */
+  flex-direction: row;
+}
+
+.flexClm {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-container {
+  max-width: 1280px;
+  margin: 0 auto
+}
