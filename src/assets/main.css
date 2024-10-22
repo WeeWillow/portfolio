@@ -20,6 +20,11 @@ a {
 
 button {
   cursor: pointer;
+  font-family: var(--font-interface);
+}
+
+p {
+  font-family: var(--font-body);
 }
 /*
 a,

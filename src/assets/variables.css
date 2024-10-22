@@ -1,6 +1,14 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Fascinate&family=Georama:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap");
 /* -------------- variables -------------- */
-/* ------ gradients -------- */
 :root {
+  /* ------ typography -------- */
+  --font-title-special: "Fascinate", serif;
+  --font-title-general: "Poiret One", sans-serif;
+  --font-body: "Athiti", serif;
+  --font-interface: "Georama", serif;
+
+  /* ------ gradients -------- */
   /* generated with https://www.realtimecolors.com */
   --linearPrimarySecondary: linear-gradient(#fee5d6, #aecbb3);
   --linearPrimaryAccent: linear-gradient(#fee5d6, #43658a);
@@ -8,62 +16,26 @@
   --radialPrimarySecondary: radial-gradient(#fee5d6, #aecbb3);
   --radialPrimaryAccent: radial-gradient(#fee5d6, #43658a);
   --radialSecondaryAccent: radial-gradient(#aecbb3, #43658a);
+
+  /* ------ sizes -------- */
+  /* roundings */
+  --rounded-min: 4px;
+  --rounded-general: 30px;
+  /* borders */
+  --border-lil: 2px;
+
+  /* ------------ */
+
+  /* attempt at consistent sizing - 🤞 */
+  --base-025: 0.25rem; /* 4px */
+  --base-050: 0.5rem; /* 8px */
+  --base-075: 0.75rem; /* 12px */
+  --base-btn-txt: 0.875rem; /* 14px */
+  --base: 1rem; /* 16px */
+  --base-125: 1.25rem; /* 20px */
+  --base-150: 1.5rem; /* 24px */
+  --base-200: 2rem; /* 32px */
+
+  /* ------ other stuff -------- */
+  --dropshadow-sharp: 0px 1px 2px 0px rgba(0, 0, 0, 0.473);
 }
-/* ------ sizes -------- */
-:root {
-  --rounded-m: 30px;
-  --border-size-s: 2px;
-  /* 8px */
-  --size-xs: .5rem; 
-  /* 16px */
-  --size-s: 1rem;
-  /* 24px */
-  --size-m: 1.5rem;
-  /* 32px */
-  --size-l: 2rem;
-}
-
-
-/* semantic color variables for this project */
-/* :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-} */
-
-
-
-/* body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */

@@ -1,17 +1,19 @@
 <script setup>
-
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
   <div class="layout-container">
-    <nav class="flexRow">
-      <RouterLink to="/">Home</RouterLink>
-      <div class="nav-island">
-        <RouterLink to="/about" class="flexRow">Om mig</RouterLink>
-        <RouterLink to="/projects" class="flexRow">Projekter</RouterLink>
-        <a class="flexRow" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer">GitHub <span class="material-icons-outlined">open_in_new</span></a>
-      </div>
-      <RouterLink to="/contact">Kontakt</RouterLink>
+    <nav>
+      <ul class="nav-list flexRow">
+        <li><RouterLink to="/">Home</RouterLink></li>
+        <div class="nav-island">
+          <li><RouterLink to="/about" class="flexRow">Om mig</RouterLink></li>
+          <li><RouterLink to="/projects" class="flexRow">Projekter</RouterLink></li>
+          <li><a class="flexRow" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer">GitHub <span class="material-icons-outlined">open_in_new</span></a></li>
+        </div>
+        <li><RouterLink to="/contact">Kontakt</RouterLink></li>
+      </ul>
     </nav>
   </div>
 </template>
@@ -23,12 +25,18 @@
 }
 
 a {
+  /* flex */
+  gap: var(--base-025);
   /* border */
-  border-radius: var(--rounded-m);
-  border: var(--border-size-s) solid var(--accent-base);
-  /* positioning */
-  padding: var(--size-xs) var(--size-s);
-  gap: var(--size-xs);
+  border: var(--border-lil) solid var(--primary-300);
+  /* shape */
+  border-radius: var(--rounded-general);
+  padding: var(--base-050) var(--base);
+  /* typography */
+  font-family: var(--font-interface);
+  font-size: var(--base);
+  /* colour */
+  color: var(--text-800);
 }
 
 nav {
@@ -38,15 +46,26 @@ nav {
   height: 6vh;
 
   /* positioning */
-  margin: 1.5rem 0;
+  margin: var(--base-150) 0;
 }
 
 span {
-  font-size: var(--size-s);
+  font-size: var(--base);
 }
 
 .nav-island {
   display: flex;
-  gap: 2rem;
+  gap: var(--base-200);
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 0;
+  }
 }
 </style>

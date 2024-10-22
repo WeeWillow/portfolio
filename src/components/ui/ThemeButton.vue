@@ -25,7 +25,6 @@ onMounted(() => {
   }
   document.documentElement.setAttribute('data-theme', currentTheme.value);
 });
-
 </script>
 
 <template>
@@ -36,9 +35,17 @@ onMounted(() => {
 
 <style scoped>
 button {
-  border-radius: 0 30px 30px 0;
+  /* flex */
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: var(--base-050);
+  /* shape */
+  border-radius: 0 var(--rounded-general) var(--rounded-general) 0;
+  padding: var(--base-025) var(--base-050);
+  /* colours */
+  background: var(--secondary-700);
+  color: var(--secondary-base);
+  /* text */
+  font-size: var(--base);
 }
 </style>
