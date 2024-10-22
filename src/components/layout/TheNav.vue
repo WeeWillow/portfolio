@@ -21,7 +21,7 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 .router-link-active {
   background: var(--primary-50);
-  border-color: var(--secondary-500);
+  border-color: var(--primary-300);
 }
 
 .flexRow {
@@ -44,7 +44,7 @@ a {
   color: var(--text-800);
   transition: all 0.15s ease-in-out;
   &:hover {
-    border-color: var(--primary-300);
+    border-color: var(--secondary-500);
   }
 }
 
