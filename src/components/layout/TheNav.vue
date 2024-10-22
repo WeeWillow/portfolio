@@ -33,7 +33,7 @@ a {
   /* flex */
   gap: var(--base-025);
   /* border */
-  border: var(--border-lil) solid var(--primary-300);
+  border: var(--border-lil) solid transparent;
   /* shape */
   border-radius: var(--rounded-general);
   padding: var(--base-050) var(--base);
@@ -42,6 +42,10 @@ a {
   font-size: var(--base);
   /* colour */
   color: var(--text-800);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    border-color: var(--primary-300);
+  }
 }
 
 nav {
