@@ -20,6 +20,7 @@
   /* ------ sizes -------- */
   /* roundings */
   --rounded-min: 4px;
+  --rounded-050: 15px;
   --rounded-general: 30px;
   /* borders */
   --border-lil: 2px;

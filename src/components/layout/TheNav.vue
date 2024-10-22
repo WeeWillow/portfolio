@@ -19,6 +19,11 @@ import { RouterLink } from 'vue-router'
 </template>
 
 <style scoped>
+.router-link-active {
+  background: var(--primary-50);
+  border-color: var(--secondary-500);
+}
+
 .flexRow {
   justify-content: space-between;
   align-items: center;

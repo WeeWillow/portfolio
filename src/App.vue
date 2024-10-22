@@ -1,16 +1,20 @@
 <script setup>
 import { RouterView } from 'vue-router'
 // import components
-import TheNav from './components/layout/TheNav.vue'
-import ThemeButton from './components/ui/ThemeButton.vue'
-import CaseCard from './components/layout/CaseCard.vue'
+import TheNav from '@/components/layout/TheNav.vue'
+import TheFooter from '@/components/layout/TheFooter.vue'
+import ThemeButton from '@/components/ui/ThemeButton.vue'
 </script>
 
 <template>
   <TheNav />
   <ThemeButton />
-  <CaseCard />
   <main><router-view /></main>
+  <TheFooter />
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  min-height: calc(100vh-footer);
+}
+</style>

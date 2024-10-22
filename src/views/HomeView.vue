@@ -1,5 +1,8 @@
 <script setup>
-
+// import components
+import CaseCardOne from '@/components/layout/CaseCardOne.vue'
+import CaseCardTwo from '@/components/layout/CaseCardTwo.vue'
+import CaseCardThree from '@/components/layout/CaseCardThree.vue'
 </script>
 
 <template>
@@ -12,7 +15,7 @@
     <p>button here - projekter</p>
   </section>
 
-  <section class="layout-container margin-top-bottom">
+  <section class="layout-container margin-bottom">
     <h2>Noget om mig</h2>
     <div class="icons">
       <p>
@@ -53,8 +56,13 @@
     <h3>Kunst</h3>
     <p>Jeg har sneget Procreate ind på listen, da jeg rigtig godt kan lide at tegne, både digitalt og traditionelt. Desuden har jeg omfattende erfaring med at tegne i Photoshop.</p>
   </section>
+  <section class="layout-container margin-bottom">
+    <h2>Nylige projekter</h2>
+    <CaseCardOne />
+    <CaseCardTwo />
+    <CaseCardThree />
+  </section>
 </template>
 
 <style scoped>
-
 </style>
