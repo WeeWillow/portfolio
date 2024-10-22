@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps, computed } from 'vue';
+import { computed } from 'vue';
 
 // state
 // define props for button
@@ -55,60 +55,150 @@ button {
   font-size: var(--base-btn-txt);
   border: none;
   box-shadow: var(--dropshadow-sharp);
+  font-weight: 500;
 }
 
-.base-base {
-  background: var(--background-base);
+[data-theme="light"] {
+  
+  .base-base {
+    background: var(--background-50);
+    color: var(--text-base);
+  }
+  
+  .base-primary {
+    background: var(--primary-400);
+    color: var(--text-100);
+  }
+  
+  .base-secondary {
+    background: var(--secondary-500);
+    color: var(--text-100);
+  }
+  
+  .base-accent {
+    background: var(--accent-500);
+    color: var(--text-100);
+  }
+  
+  /* Tonal variants */
+  .tonal-base {
+    background: var(--background-100);
+    color: var(--background-400);
+  }
+  .tonal-primary {
+    background: var(--primary-100);
+    color: var(--primary-400);
+  }
+  
+  .tonal-secondary {
+    background: var(--secondary-100);
+    color: var(--secondary-600);
+  }
+  
+  .tonal-accent {
+    background: var(--accent-100);
+    color: var(--accent-500);
+  }
+  
+  /* Outline variants */
+  .outline-base {
+    background: var(--background-base);
+    border: var(--border-lil) solid var(--background-300);
+    color: var(--background-400);
+    box-shadow: none;
+  }
+  
+  .outline-primary {
+    background: transparent;
+    border: var(--border-lil) solid var(--primary-300);
+    color: var(--primary-500);
+    box-shadow: none;
+  }
+  
+  .outline-secondary {
+    background: transparent;
+    border: var(--border-lil) solid var(--secondary-400);
+    color: var(--secondary-600);
+    box-shadow: none;
+  }
+  
+  .outline-accent {
+    background: transparent;
+    border: var(--border-lil) solid var(--accent-500);
+    color: var(--accent-500);
+    box-shadow: none;
+  }
 }
-
-.base-primary {
-  background: var(--primary-400);
-  color: var(--text-100);
-}
-
-.base-secondary {
-  background: gray;
-  color: white;
-}
-
-.base-accent {
-  background: orange;
-  color: white;
-}
-
-/* Tonal variants */
-.tonal-primary {
-  background: lightblue;
-  color: black;
-}
-
-.tonal-secondary {
-  background: lightgray;
-  color: black;
-}
-
-.tonal-accent {
-  background: lightcoral;
-  color: black;
-}
-
-/* Outline variants */
-.outline-primary {
-  background: transparent;
-  border: 2px solid blue;
-  color: blue;
-}
-
-.outline-secondary {
-  background: transparent;
-  border: 2px solid gray;
-  color: gray;
-}
-
-.outline-accent {
-  background: transparent;
-  border: 2px solid orange;
-  color: orange;
+[data-theme="dark"] {
+  
+  .base-base {
+    background: var(--background-200);
+    color: var(--text-base);
+  }
+  
+  .base-primary {
+    background: var(--primary-300);
+    color: var(--text-base);
+  }
+  
+  .base-secondary {
+    background: var(--secondary-300);
+    color: var(--text-base);
+  }
+  
+  .base-accent {
+    background: var(--accent-500);
+    color: var(--text-base);
+  }
+  
+  /* Tonal variants */
+  .tonal-base {
+    background: var(--background-300);
+    color: var(--background-900);
+  }
+  .tonal-primary {
+    background: var(--primary-200);
+    color: var(--primary-800);
+  }
+  
+  .tonal-secondary {
+    background: var(--secondary-200);
+    color: var(--secondary-700);
+  }
+  
+  .tonal-accent {
+    background: var(--accent-200);
+    color: var(--accent-800);
+  }
+  
+  /* Outline variants */
+  .outline-base {
+    background: var(--background-base);
+    border: var(--border-lil) solid var(--background-600);
+    color: var(--background-700);
+    box-shadow: none;
+  }
+  
+  .outline-primary {
+    background: transparent;
+    border: var(--border-lil) solid var(--primary-600);
+    color: var(--primary-700);
+    box-shadow: none;
+  }
+  
+  .outline-secondary {
+    background: transparent;
+    border: var(--border-lil) solid var(--secondary-600);
+    color: var(--secondary-700);
+    box-shadow: none;
+  }
+  
+  .outline-accent {
+    background: transparent;
+    border: var(--border-lil) solid var(--accent-600);
+    color: var(--accent-700);
+    box-shadow: none;
+  }
 }
 
 </style>

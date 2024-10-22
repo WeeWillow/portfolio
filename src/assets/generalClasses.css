@@ -13,10 +13,23 @@
 
 .layout-container {
   max-width: 1280px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .fullwidth-background {
   background: var(--primary-base);
   width: 100%;
+}
+
+.margin-top-bottom {
+  margin-top: var(--base-450);
+  margin-bottom: var(--base-450);
+}
+
+.margin-top {
+  margin-top: var(--base-450);
+}
+
+.margin-bottom {
+  margin-bottom: var(--base-450);
 }
