@@ -12,9 +12,9 @@ import { RouterLink } from 'vue-router'
         <h4>Fokusområder:</h4>
         <p>UX/UI Designer</p>
         <p>Udvikler</p>
-        <div>
-          <p>button</p>
-          <p>button</p>
+        <div class="buttons flexRow">
+          <a href="#" class="btn">GitHub</a>
+          <a href="#" class="btn">Live demo</a>
         </div>
       </section>
     </article>
@@ -30,6 +30,16 @@ article {
   border-radius: var(--rounded-050);
 
   padding: var(--base-200);
+}
+
+.buttons {
+  margin: var(--base-200) 0;
+  gap: var(--base-200);
+  justify-content: end;
+}
+
+.btn {
+  background: var(--secondary-base);
 }
 
 </style>

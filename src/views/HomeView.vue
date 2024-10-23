@@ -13,8 +13,8 @@ import CaseCardOne from '@/components/layout/CaseCardOne.vue'
         <h2>UX/UI Designer</h2>
         <h2>Frontender</h2>
         <div class="buttons flexRow">
-          <RouterLink to="/contact">Kontakt</RouterLink>
-          <RouterLink to="/projects">Projekter</RouterLink>
+          <RouterLink to="/contact" class="btn">Kontakt</RouterLink>
+          <RouterLink to="/projects" class="btn">Projekter</RouterLink>
         </div>
       </div>
       <img src="../assets/img/Dandy Frog.jpeg" alt="placeholder frog">
@@ -137,5 +137,10 @@ img {
 .flexRow {
  gap: var(--base-400);
  justify-content: space-between;
+}
+
+.buttons {
+  margin: var(--base-200) 0;
+  justify-content: start;
 }
 </style>

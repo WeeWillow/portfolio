@@ -4,7 +4,7 @@ import CaseCardOne from '@/components/layout/CaseCardOne.vue'
 </script>
 
 <template>
-  <CaseCardOne />
+  <section class="layout-container margin-bottom"><CaseCardOne /></section>
   <h1>Under construction - Projekter</h1>
   <h2>We appreciate your patience</h2>
 </template>

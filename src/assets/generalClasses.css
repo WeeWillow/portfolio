@@ -32,5 +32,12 @@
 }
 
 .margin-bottom {
-  margin-bottom: var(--base-450);
+  margin-bottom: var(--base-900);
+}
+
+.btn {
+  border-radius: var(--rounded-general);
+  background: var(--primary-base);
+  padding: var(--base) var(--base-200);
+  box-shadow: var(--shadow-sharp);
 }
