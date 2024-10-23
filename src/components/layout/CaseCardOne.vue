@@ -28,6 +28,8 @@ article {
   width: 100%;
   background: var(--primary-base);
   border-radius: var(--rounded-050);
+
+  padding: var(--base-200);
 }
 
 </style>
