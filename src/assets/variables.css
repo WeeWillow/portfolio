@@ -36,9 +36,10 @@
   --base-125: 1.25rem; /* 20px */
   --base-150: 1.5rem; /* 24px */
   --base-200: 2rem; /* 32px */
+  --base-400: 4rem; /* 64px */
   --base-450: 4.5rem; /* 72px */
   --base-900: 9rem; /* 144px */
 
   /* ------ other stuff -------- */
-  --dropshadow-sharp: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  --shadow-sharp: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
 }

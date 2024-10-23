@@ -2,15 +2,41 @@
 @import "./generalClasses.css";
 @import "./themes.css";
 
-body {
-  background: var(--background-base);
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background: var(--background-base);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title-general);
+  color: var(--text-600);
+}
+
+h1 {
+  font-size: var(--base-400);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: var(--base-200);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 button {

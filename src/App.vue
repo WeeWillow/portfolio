@@ -14,7 +14,5 @@ import ThemeButton from '@/components/ui/ThemeButton.vue'
 </template>
 
 <style scoped>
-main {
-  min-height: calc(100vh-footer);
-}
+
 </style>

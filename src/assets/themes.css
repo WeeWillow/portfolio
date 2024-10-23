@@ -5,7 +5,7 @@
 :root[data-theme="light"] {
   /* base */
   --text-base: #17110f;
-  --background-base: #fff7f4;
+  --background-base: hsl(16, 100%, 96%);
   --primary-base: #fee5d6;
   --secondary-base: #aecbb3;
   --accent-base: #43658a;

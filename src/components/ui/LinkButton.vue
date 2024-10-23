@@ -39,26 +39,23 @@ function clickHandler() {
 </script>
 
 <template>
-<button :class="computedClass" :type="type" @click="clickHandler">
+<a :class="computedClass" :type="type" @click="clickHandler">
   {{ label }}
   <!-- conditionally render icon -->
   <span v-if="icon" class="material-icons-outlined">{{ icon }}</span>
-</button>
+</a>
 </template>
 
 <style scoped>
-
 /* Styles for base buttons */
 button {
   padding: var(--base-075) var(--base);
   border-radius: var(--rounded-min);
   font-size: var(--base-btn-txt);
   border: none;
-  box-shadow: var(--dropshadow-sharp);
+  box-shadow: var(--shadow-sharp);
   font-weight: 500;
 }
-
-
 
 [data-theme="light"] {
   

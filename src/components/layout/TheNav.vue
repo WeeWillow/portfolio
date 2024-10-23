@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router'
           <li><RouterLink to="/projects" class="flexRow">Projekter</RouterLink></li>
           <li><a class="flexRow" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer">GitHub <span class="material-icons-outlined">open_in_new</span></a></li>
         </div>
-        <li><RouterLink to="/contact">Kontakt</RouterLink></li>
+        <li><RouterLink to="/contact" class="flexRow">Kontakt <span class="material-icons-outlined contact">email</span></RouterLink></li>
       </ul>
     </nav>
   </div>
@@ -40,6 +40,7 @@ a {
   /* typography */
   font-family: var(--font-interface);
   font-size: var(--base);
+  text-transform: uppercase;
   /* colour */
   color: var(--text-800);
   transition: all 0.15s ease-in-out;
@@ -60,6 +61,11 @@ nav {
 
 span {
   font-size: var(--base);
+}
+
+span.contact {
+  font-size: var(--base-150);
+  color: var(--accent-400);
 }
 
 .nav-island {

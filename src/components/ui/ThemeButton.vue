@@ -34,18 +34,57 @@ onMounted(() => {
 </template>
 
 <style scoped>
+
+[data-theme="light"] {
+  button {
+    background: var(--accent-700);
+    color: var(--text-50);
+    span {
+      color: var(--accent-200);
+    }
+    &:hover {
+      background: var(--accent-600);
+      color: var(--accent-50);
+      span {
+        color: var(--accent-50);
+      }
+    }
+  }
+}
+
+[data-theme="dark"] {
+  button {
+    background: var(--background-400);
+    color: var(--background-900);
+    span {
+      color: var(--primary-800);
+    }
+    &:hover {
+      background: var(--background-500);
+      color: var(--background-950);
+      span {
+        color: var(--primary-900);
+      }
+    }
+  }
+}
+
 button {
   /* flex */
   display: flex;
   align-items: center;
   gap: var(--base-050);
   /* shape */
+  border: none;
+  box-shadow: var(--shadow-sharp);
   border-radius: 0 var(--rounded-general) var(--rounded-general) 0;
   padding: var(--base-025) var(--base-050);
-  /* colours */
-  background: var(--secondary-700);
-  color: var(--secondary-base);
+  width: fit-content;
   /* text */
   font-size: var(--base);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    transform: scale(1.007);
+  }
 }
 </style>

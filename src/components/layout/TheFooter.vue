@@ -4,7 +4,8 @@
 
 <template>
 <footer>
-  <h2>Heres a footer</h2>
+  <h2>Here's a footer</h2>
+  <p>&copy; 2024 - By Monica, all rights reserved.</p>
 </footer>
 </template>
 

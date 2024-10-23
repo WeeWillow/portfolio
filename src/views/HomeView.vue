@@ -1,8 +1,6 @@
 <script setup>
 // import components
 import CaseCardOne from '@/components/layout/CaseCardOne.vue'
-import CaseCardTwo from '@/components/layout/CaseCardTwo.vue'
-import CaseCardThree from '@/components/layout/CaseCardThree.vue'
 </script>
 
 <template>
@@ -59,8 +57,6 @@ import CaseCardThree from '@/components/layout/CaseCardThree.vue'
   <section class="layout-container margin-bottom">
     <h2>Nylige projekter</h2>
     <CaseCardOne />
-    <CaseCardTwo />
-    <CaseCardThree />
   </section>
 </template>
 
