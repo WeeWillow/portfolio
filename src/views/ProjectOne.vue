@@ -121,86 +121,74 @@
   </section>
 
   <section class="layout-container margin-bottom">
-    <h3>Udvikle Design</h3>
-    Udvikle Design
-    Overskrift:
-    Udviklingen af design
-
-    Brødtekst:
-    Med research, brugerundersøgelser og indhold på plads, skulle vi skabe selve designet, hvilket vi gjorde i tre faser: Skitser, wireframes og high fidelity mock-ups og interaktiv prototype.
-    Skitsering:
-    Skitsering
-    Vores design process var meget iterativ. Vi havde skitseret flere gange tidligere i processen, for at bedre kommunikere og dele forståelse og idéer, og startede derfor ikke på bar bund da det faktisk var tid for skitsering.
-
-    Vi skitserede hver især en side hjemme, som vi delte med gruppen til næste arbejdstilfælde. Efter den første skitsering og diskussioner, kom vi frem til at vi havde meget ens forestilling af hvordan webappen skulle se ud, så vi delte skitseringen op i forskellige sider, som vi hver især lavede en skitse til, og derefter delte til diskussion og feedback.
-
-    Wireframes:
-    Wireframes
-    Baseret på denne feedback, lavede vi ændringer ved behov, og gik så i gang med at skabe wireframes. Vi følte at fremtidige ændringer til designet ville være hurtigere at ændre i Adobe XD, fremfor på papir. Der var et antal wireframes som vi havde en dybere iterativ tilgang til, og lavede flere mulige versioner af, før vi var tilfredse.
-
-    Billede af wireframes
-
-    Mock-ups, prototype & Think Aloud Usability test:
-    Mock-up, Prototype & Usability test
-    Med vores wireframes på plads, gik vi videre til at skabe det endelige mock-up og den interaktive prototype, som vi brugte til at udføre 5 "Think-aloud" usability test på. Disse usability test, var til for at teste vores design, layout og navigation. Vi oplevede ingen større udfordringer med selve designet, men der var nogle mindre udfordringer med fontvalg og størrelse, samt formulering på programoversigten.
-
-    Billede af mockup
-    Billede af mockup
-    Billede af usability test rapport
+    <h2>Design</h2>
+    <h3>Udviklingen af design</h3>
+    <p>Med research, brugerundersøgelser og indhold på plads, skulle vi skabe selve designet, hvilket vi gjorde i tre faser: Skitser, wireframes og high fidelity mock-ups og interaktiv prototype.</p>
+    <br>
+    <h3>Skitsering</h3>
+    <p>Vores design process var meget iterativ. Vi havde skitseret flere gange tidligere i processen, for at bedre kommunikere og dele forståelse og idéer, og startede derfor ikke på bar bund da det faktisk var tid for skitsering.</p>
+    <br>
+    <p>Vi skitserede hver især en side hjemme, som vi delte med gruppen til næste arbejdstilfælde. Efter den første skitsering og diskussioner, kom vi frem til at vi havde meget ens forestilling af hvordan webappen skulle se ud, så vi delte skitseringen op i forskellige sider, som vi hver især lavede en skitse til, og derefter delte til diskussion og feedback.</p>
+    <br>
+    <h3>Wireframes</h3>
+    <p>Baseret på denne feedback, lavede vi ændringer ved behov, og gik så i gang med at skabe wireframes. Vi følte at fremtidige ændringer til designet ville være hurtigere at ændre i Adobe XD, fremfor på papir. Der var et antal wireframes som vi havde en dybere iterativ tilgang til, og lavede flere mulige versioner af, før vi var tilfredse.</p>
+    <br>
+    <h3>Mock-up, Prototype & Usability test</h3>
+    <p>Med vores wireframes på plads, gik vi videre til at skabe det endelige mock-up og den interaktive prototype, som vi brugte til at udføre 5 "Think-aloud" usability test på. Disse usability test, var til for at teste vores design, layout og navigation. Vi oplevede ingen større udfordringer med selve designet, men der var nogle mindre udfordringer med fontvalg og størrelse, samt formulering på programoversigten.</p>
   </section>
 
   <section class="layout-container margin-bottom">
-    <h3>Realisering</h3>
-    Overskrift:
-    Udvikling & Implementering
-
-    Brødtekst:
-    N/A
-
-    Setup til kode:
-    Setup
-    For at udvikle webappen oprettede vi et kode repository på GitHub, hvor vi samarbejdede om projektet og opdelte det i branches for hver side af webappen. Vi implementerede to funktioner i JavaScript til projektet: tabs og en burger menu navigation. Vi diskuterede deres udseende, funktionalitet og hvilke sider, de skulle bruges til.
-
-    Tabs-funktionen fungerer således, at hver fane er tildelt et unikt ID i HTML-dokumentet. Når en fane trykkes på, ændrer JavaScript koden den aktuelle CSS-styling for den valgte fane og gemmer resten. Burger menu navigationen fungerer på en lignende måde: den er skjult, indtil brugeren trykker på burger-ikonet. JavaScript tildeler derefter styling for at vise navigationen.
-
+    <h2>Udvikling</h2>
+    <h3>Setup</h3>
+    <p>For at udvikle webappen oprettede vi et kode repository på GitHub, hvor vi samarbejdede om projektet og opdelte det i branches for hver side af webappen.</p>
+    <br>
+    <h3>Implementering</h3>
+    <p>Vi implementerede to funktioner i JavaScript til projektet: tabs og en burger menu navigation. Vi diskuterede deres udseende, funktionalitet og hvilke sider, de skulle bruges til.</p>
+    <br>
+    <h3>Funktionalitet</h3>
+    <p>Tabs-funktionen fungerer således, at hver fane er tildelt et unikt ID i HTML-dokumentet. Når en fane trykkes på, ændrer JavaScript koden den aktuelle CSS-styling for den valgte fane og gemmer resten. Burger menu navigationen fungerer på en lignende måde: den er skjult, indtil brugeren trykker på burger-ikonet. JavaScript tildeler derefter styling for at vise navigationen.</p>
   </section>
 
   <section class="layout-container margin-bottom">
-    <h3>Konklusion</h3>
-    Kom vi i mål?:
-    Løste vi problemet?
-
-    Overordnet set, fik vi skabt en webapp, der løste de primære udfordringer nævnt i problembeskrivelsen. Vores webapp giver brugeren mulighed for nemt at kunne skabe et overblik over begivenhederne, og dermed strukturere sin deltagelse ud fra dette. Den kan bruges før og under festivalen, både til planlægning men også hurtig informationssøgning.
-
-    Der var en generel udfordring med at konkret forstå hvad der gjorde noget til en webapp fremfor en normal app, eller en hjemmeside, og man kan argumentere at vores løsning ligger nærmere en hjemmeside, end et konkret værktøj som forlængelse af en eksisterende hjemmeside. Vi glemte at webappen var i forlængelse af en side, og fik skabt en forside som sagde meget af det samme man i realiteten allerede ville have læst inden man åbnede appen.
-
-    Man kan også argumentere at vores løsning prøvede at være mere end et værktøj, og man kunne tage nogle ting ud af designet, og egentlig stå tilbage med et bedre slutresultat. Vi skabte et kort der, udover at vise festivalens spillesteder og toiletter i nærheden, også viste spisesteder. Noget festivalen ikke selv står for. Udover kortet, var der også en side i appen, dedikeret til mad og drikke.
-
-    Refleksion:
-    Ændringer eller forbedringer?
-    Hvis jeg skulle videreudvikle på denne webapp, så er der nogle konkrete ting jeg ville ændre.
-
-    Forenkle
-    Dels, så ville jeg fjerne de ting der ikke havde med Den Blå Festival at gøre, altså mad og drikke sektionen. Der findes allerede apps for dette, og det er ikke noget Den Blå Festival selv tilbyder, de ville derfor ikke have gavn af denne sektion.
-
-    Tilgængelighed
-    Udover det, ville jeg arbejde med farver, kontrast og læsbarhed, og generelt lægge mere fokus på tilgængeligheden af designet, da nogle dele kan være udfordrende for visse mennesker at læse.
-
-    Navigation
-    Jeg ville arbejde med navigation, ikoner og wayfinding, samt så ville jeg ændre på forsiden. For at optimere webappen og dens funktionalitet, ville jeg gøre mere ud af ikoner, genveje og hurtigt overblik. Jeg ville også arbejde videre på progressive disclosure.
-
-    JavaScript
-    Med mere JavaScript erfaring bag mig, ville jeg ændre hvordan vores tabs fungerer ved at fjerne de tildelte ID inde i HTML filen, med "separation of concerns" princippet i mente for at optimere koden. Gennem brug af "querySelectAll", kan man fange alle tabs fra HTML, uden at blande koden. Jeg ønsker at forbedre koden ved at implementere "separation of concerns" princippet og bruge querySelectAll til at optimere tabs-funktionaliteten. Dette vil gøre koden mere struktureret og lettere at vedligeholde og optimere.
-
-    Det vi gjorde godt:
-    Hvad der var særligt vellykket?
-    Jeg føler at det overordnede visuelle design er særligt vellykket. Det gør godt brug af Den Blå Festivals farver, som vi tog ud fra deres logo, og det deler information ind i tydelige visuelle chunks. Vores fontvalg er både tematisk passende, men også balanceret, med en unik font til titler, og en læsbar samt funktionel font til brødtekst.
-
-    Det jeg vil tage med mig til næste gang:
-    Hvad har jeg lært?
-    • Det er nemt at gøre for meget, og svært at holde sig helt inde for skiven, specielt når man har mange idéer, og muligvis ikke er i en gruppe der altid deler samme vision af slutresultatet.
-    • Det kan være nemt at glemme målet, og man bør have det i mente hele vejen igennem projektet.
+    <h2>Konklusion</h2>
+    <h3>Løste vi problemet?</h3>
+    <p>Overordnet set, fik vi skabt en webapp, der løste de primære udfordringer nævnt i problembeskrivelsen. Vores webapp giver brugeren mulighed for nemt at kunne skabe et overblik over begivenhederne, og dermed strukturere sin deltagelse ud fra dette. Den kan bruges før og under festivalen, både til planlægning men også hurtig informationssøgning.</p>
+    <br>
+    <p>Der var en generel udfordring med at konkret forstå hvad der gjorde noget til en webapp fremfor en normal app, eller en hjemmeside, og man kan argumentere at vores løsning ligger nærmere en hjemmeside, end et konkret værktøj som forlængelse af en eksisterende hjemmeside. Vi glemte at webappen var i forlængelse af en side, og fik skabt en forside som sagde meget af det samme man i realiteten allerede ville have læst inden man åbnede appen.</p>
+    <br>
+    <p>Man kan også argumentere at vores løsning prøvede at være mere end et værktøj, og man kunne tage nogle ting ud af designet, og egentlig stå tilbage med et bedre slutresultat. Vi skabte et kort der, udover at vise festivalens spillesteder og toiletter i nærheden, også viste spisesteder. Noget festivalen ikke selv står for. Udover kortet, var der også en side i appen, dedikeret til mad og drikke.</p>
   </section>
+
+  <section class="layout-container margin-bottom">
+    <h2>Refleksion</h2>
+    <p>Hvis jeg skulle videreudvikle på denne webapp, så er der nogle konkrete ting jeg ville ændre.</p>
+    <br>
+    <h3>Forenkle</h3>
+    <p>Dels, så ville jeg fjerne de ting der ikke havde med Den Blå Festival at gøre, altså mad og drikke sektionen. Der findes allerede apps for dette, og det er ikke noget Den Blå Festival selv tilbyder, de ville derfor ikke have gavn af denne sektion.</p>
+    <br>
+    <h3>Tilgængelighed</h3>
+    <p>Udover det, ville jeg arbejde med farver, kontrast og læsbarhed, og generelt lægge mere fokus på tilgængeligheden af designet, da nogle dele kan være udfordrende for visse mennesker at læse.</p>
+    <br>
+    <h3>Navigation</h3>
+    <p>Jeg ville arbejde med navigation, ikoner og wayfinding, samt så ville jeg ændre på forsiden. For at optimere webappen og dens funktionalitet, ville jeg gøre mere ud af ikoner, genveje og hurtigt overblik. Jeg ville også arbejde videre på progressive disclosure.</p>
+    <br>
+    <h3>JavaScript</h3>
+    <p>Med mere JavaScript erfaring bag mig, ville jeg ændre hvordan vores tabs fungerer ved at fjerne de tildelte ID inde i HTML filen, med "separation of concerns" princippet i mente for at optimere koden. Gennem brug af "querySelectAll", kan man fange alle tabs fra HTML, uden at blande koden. Jeg ønsker at forbedre koden ved at implementere "separation of concerns" princippet og bruge querySelectAll til at optimere tabs-funktionaliteten. Dette vil gøre koden mere struktureret og lettere at vedligeholde og optimere.</p>
+    <br>
+    <h3>Hvad der var særligt vellykket?</h3>
+    <p>Jeg føler at det overordnede visuelle design er særligt vellykket. Det gør godt brug af Den Blå Festivals farver, som vi tog ud fra deres logo, og det deler information ind i tydelige visuelle chunks. Vores fontvalg er både tematisk passende, men også balanceret, med en unik font til titler, og en læsbar samt funktionel font til brødtekst.</p>
+    <br>
+    <h3>Hvad har jeg lært?</h3>
+    <ul>
+      <li>Det er nemt at gøre for meget, og svært at holde sig helt inde for skiven, specielt når man har mange idéer, og muligvis ikke er i en gruppe der altid deler samme vision af slutresultatet.</li>
+      <li>Det kan være nemt at glemme målet, og man bør have det i mente hele vejen igennem projektet.</li>
+    </ul>
+  </section>
+
+  <section class="margin-bottom toTop">
+    <RouterLink to="#" class="btn">Tilbage til top <span class="material-icons-outlined contact">arrow_circle_up</span></RouterLink>
+  </section>
+  
 </template>
 
 <style scoped>
@@ -228,4 +216,21 @@ header {
   gap: var(--base);
   margin: var(--base-200) 0;
 }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+section.toTop {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  margin: 0 var(--base-050);
+}
+
 </style>

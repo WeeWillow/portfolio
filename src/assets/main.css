@@ -18,7 +18,6 @@
 
 html {
   scrollbar-gutter: stable;
-  scroll-behavior: smooth;
   overscroll-behavior: contain;
 }
 
@@ -60,10 +59,10 @@ a {
   color: var(--text-base);
 }
 
-p, li {
+p,
+li {
   font-family: var(--font-body);
   color: var(--text-base);
-  
 }
 
 li::marker {

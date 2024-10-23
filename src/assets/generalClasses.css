@@ -36,6 +36,7 @@
 }
 
 .btn {
+  font-family: var(--font-interface);
   border-radius: var(--rounded-general);
   background: var(--primary-base);
   padding: var(--base) var(--base-200);
