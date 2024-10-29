@@ -27,7 +27,7 @@ article {
   height: 300px;
   width: 100%;
   background: var(--primary-base);
-  border-radius: var(--rounded-050);
+  border-radius: var(--rounded-50);
 
   padding: var(--base-200);
 }

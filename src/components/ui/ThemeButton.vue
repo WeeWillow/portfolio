@@ -73,12 +73,12 @@ button {
   /* flex */
   display: flex;
   align-items: center;
-  gap: var(--base-050);
+  gap: var(--base-50);
   /* shape */
   border: none;
   box-shadow: var(--shadow-sharp);
   border-radius: 0 var(--rounded-general) var(--rounded-general) 0;
-  padding: var(--base-025) var(--base-050);
+  padding: var(--base-25) var(--base-50);
   width: fit-content;
   /* text */
   font-size: var(--base);

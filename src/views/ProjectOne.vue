@@ -193,7 +193,7 @@
 
 <style scoped>
 h2 {
-  margin: var(--base-050) 0;
+  margin: var(--base-50) 0;
 }
 
 p {
@@ -230,7 +230,7 @@ section.toTop {
 }
 
 span {
-  margin: 0 var(--base-050);
+  margin: 0 var(--base-50);
 }
 
 </style>

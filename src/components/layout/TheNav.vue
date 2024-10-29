@@ -6,13 +6,13 @@ import { RouterLink } from 'vue-router'
   <div class="layout-container">
     <nav>
       <ul class="nav-list flexRow">
-        <li><RouterLink to="/">Home</RouterLink></li>
+        <li><RouterLink to="/" class="neum">Home</RouterLink></li>
         <div class="nav-island">
-          <li><RouterLink to="/about" class="flexRow">Om mig</RouterLink></li>
-          <li><RouterLink to="/projects" class="flexRow">Projekter</RouterLink></li>
-          <li><a class="flexRow" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer">GitHub <span class="material-icons-outlined">open_in_new</span></a></li>
+          <li><RouterLink to="/about" class="flexRow neum">Om mig</RouterLink></li>
+          <li><RouterLink to="/projects" class="flexRow neum">Projekter</RouterLink></li>
+          <li><a class="flexRow neum" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer">GitHub <span class="material-icons-outlined">open_in_new</span></a></li>
         </div>
-        <li><RouterLink to="/contact" class="flexRow">Kontakt <span class="material-icons-outlined contact">email</span></RouterLink></li>
+        <li><RouterLink to="/contact" class="flexRow neum">Kontakt <span class="material-icons-outlined contact">email</span></RouterLink></li>
       </ul>
     </nav>
   </div>
@@ -21,7 +21,8 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 .router-link-active {
   background: var(--primary-50);
-  border-color: var(--primary-300);
+  border-color: var(--secondary-300);
+  color: var(--secondary-500);
 }
 
 .flexRow {
@@ -31,22 +32,19 @@ import { RouterLink } from 'vue-router'
 
 a {
   /* flex */
-  gap: var(--base-025);
+  gap: var(--base-25);
   /* border */
   border: var(--border-lil) solid transparent;
   /* shape */
-  border-radius: var(--rounded-general);
-  padding: var(--base-050) var(--base);
+  border-radius: var(--rounded-50);
+  padding: var(--base-50) var(--base);
   /* typography */
   font-family: var(--font-interface);
   font-size: var(--base);
   text-transform: uppercase;
   /* colour */
-  color: var(--text-800);
-  transition: all 0.15s ease-in-out;
-  &:hover {
-    border-color: var(--secondary-500);
-  }
+  color: var(--text-400);
+  transition: all 0.2s ease-in-out;
 }
 
 nav {

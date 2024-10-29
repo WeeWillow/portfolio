@@ -94,7 +94,7 @@ h2 {
 
 .content {
   h2 {
-    margin: var(--base-025) 0;
+    margin: var(--base-25) 0;
     color: var(--primary-300);
   }
 }
@@ -110,7 +110,7 @@ h2 {
 img {
   border: 2px solid var(--secondary-200);
   border-radius: var(--rounded-general);
-  padding: var(--base-050);
+  padding: var(--base-50);
   transition: all 0.15s ease-in-out;
   &:hover {
     transform: scale(1.01);
@@ -121,16 +121,16 @@ img {
 .icons {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: var(--base-050);
+  gap: var(--base-50);
   align-items: center;
   padding: var(--base) 0;
   height: 100%;
 
   p {
     background: var(--secondary-base);
-    padding: var(--base-075);
+    padding: var(--base-75);
     text-align: center;
-    border-radius: var(--rounded-050);
+    border-radius: var(--rounded-50);
   }
 }
 

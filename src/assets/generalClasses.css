@@ -42,3 +42,15 @@
   padding: var(--base) var(--base-200);
   box-shadow: var(--shadow-sharp);
 }
+
+.neum {
+  box-shadow: var(--neum-raised);
+  transition: all .25s ease-in-out;
+  &:hover {
+    background: var(--hover-background);
+    color: var(--secondary-400);
+  }
+  &:active {
+    box-shadow: var(--neum-inset);
+  }
+}

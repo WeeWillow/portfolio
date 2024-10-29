@@ -9,6 +9,9 @@
   --primary-base: #fee5d6;
   --secondary-base: #aecbb3;
   --accent-base: #43658a;
+  --raised: #ffffff;
+  --lowered: hsl(17, 76%, 89%);
+  --hover-background: radial-gradient(circle, rgba(255, 255, 255, 0.068) 100%, rgba(255, 249, 244, 0.4) 30%);
 
   /* text shades */
   --text-50: #f5f1f0;
@@ -84,6 +87,8 @@
   --primary-base: #dba791;
   --secondary-base: #345139;
   --accent-base: #7598bd;
+  --raised: #4c3229;
+  --lowered: hsl(16, 42%, 10%);
 
   /* text shades */
   --text-50: #100b0a;
