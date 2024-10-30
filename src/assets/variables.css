@@ -36,6 +36,7 @@
   --base-125: 1.25rem; /* 20px */
   --base-150: 1.5rem; /* 24px */
   --base-200: 2rem; /* 32px */
+  --base-300: 3rem; /* 48px */
   --base-400: 4rem; /* 64px */
   --base-450: 4.5rem; /* 72px */
   --base-550: 5.5rem; /* 88px */
@@ -43,6 +44,6 @@
 
   /* ------ other stuff -------- */
   --shadow-sharp: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
-  --neum-raised: 0.3rem 0.3rem 0.6rem var(--lowered), -0.2rem -0.2rem 0.5rem var(--raised);
+  --neum-outset: 0.3rem 0.3rem 0.6rem var(--lowered), -0.2rem -0.2rem 0.5rem var(--raised);
   --neum-inset: inset 0.2rem 0.2rem 0.5rem var(--background-100), inset -0.2rem -0.2rem 0.5rem var(--raised);
 }

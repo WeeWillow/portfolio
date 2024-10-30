@@ -44,8 +44,8 @@
 }
 
 .neum {
-  box-shadow: var(--neum-raised);
-  transition: all .25s ease-in-out;
+  box-shadow: var(--neum-outset);
+  transition: all 0.25s ease-in-out;
   &:hover {
     background: var(--hover-background);
     color: var(--secondary-400);
