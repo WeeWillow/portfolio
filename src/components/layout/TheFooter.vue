@@ -11,9 +11,8 @@
 
 <style scoped>
 footer {
-  min-height: 10vh;
   background: var(--primary-200);
-  padding: var(--base-200);
+  padding: var(--base-250);
   text-align: center;
 }
 </style>
