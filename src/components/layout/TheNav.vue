@@ -3,7 +3,6 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <div class="layout-container">
     <nav>
       <ul class="nav-list flexRow">
         <li><RouterLink to="/" class="neum">Home</RouterLink></li>
@@ -15,7 +14,6 @@ import { RouterLink } from 'vue-router'
         <li><RouterLink to="/contact" class="flexRow neum">Kontakt <span class="material-icons-outlined contact">email</span></RouterLink></li>
       </ul>
     </nav>
-  </div>
 </template>
 
 <style scoped>

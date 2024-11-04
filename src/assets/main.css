@@ -1,6 +1,14 @@
+/* ----------- css imports -----------  */
+
 @import "./variables.css";
 @import "./generalClasses.css";
 @import "./themes.css";
+
+/* css imports end */
+/*  */
+/*  */
+/*  */
+/* ----------- global general stylings -----------  */
 
 *,
 *::before,
@@ -23,9 +31,44 @@ html {
 
 body {
   background: var(--background-base);
-  display: grid;
-  grid-template-columns: 1fr min(90vw, 1600px) 1fr;
 }
+
+/* global general stylings end */
+/*  */
+/*  */
+/*  */
+/* ----------- global layout grid ----------- */
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr min(90vw, 1400px) 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+nav {
+  grid-row: 1;
+}
+
+nav, main {
+  grid-column: 2;
+}
+
+main {
+  grid-row: 3;
+  padding: 5vh 0 7vh 0; /* ensure spacing from theme button and footer*/
+}
+
+footer {
+  grid-column: 1 / -1;
+  grid-row: 4;
+}
+
+/* global layout grid end */
+/*  */
+/*  */
+/*  */
+/* ----------- global font styling ----------- */
 
 h1,
 h2,
@@ -41,16 +84,6 @@ h1 {
 
 h2 {
   font-size: var(--base-200);
-}
-
-#app {
-  min-height: 100vh;
-  grid-column: 2;
-  
-}
-
-main {
-  grid-column: 2;
 }
 
 button {
@@ -72,3 +105,8 @@ li {
 li::marker {
   color: var(--primary-400);
 }
+
+/* global font styling end */
+/*  */
+/*  */
+/*  */

@@ -11,17 +11,6 @@
   flex-direction: column;
 }
 
-.layout-container {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.fullwidth-background {
-  background: var(--primary-base);
-  width: 100%;
-}
-
 .margin-top-bottom {
   margin-top: var(--base-450);
   margin-bottom: var(--base-450);

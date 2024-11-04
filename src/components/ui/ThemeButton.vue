@@ -35,6 +35,32 @@ onMounted(() => {
 
 <style scoped>
 
+button {
+  /* grid layout */
+  grid-column: 1 / -1;
+  grid-row: 2;
+
+  /* flex */
+  display: flex;
+  align-items: center;
+  gap: var(--base-50);
+
+  /* shape */
+  border: none;
+  height: var(--base-225);
+  box-shadow: var(--shadow-sharp);
+  border-radius: 0 var(--rounded-general) var(--rounded-general) 0;
+  padding: var(--base-25) var(--base-50);
+  width: fit-content;
+
+  /* text */
+  font-size: var(--base);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    transform: scale(1.007);
+  }
+}
+
 [data-theme="light"] {
   button {
     background: var(--accent-700);
@@ -66,25 +92,6 @@ onMounted(() => {
         color: var(--primary-900);
       }
     }
-  }
-}
-
-button {
-  /* flex */
-  display: flex;
-  align-items: center;
-  gap: var(--base-50);
-  /* shape */
-  border: none;
-  box-shadow: var(--shadow-sharp);
-  border-radius: 0 var(--rounded-general) var(--rounded-general) 0;
-  padding: var(--base-25) var(--base-50);
-  width: fit-content;
-  /* text */
-  font-size: var(--base);
-  transition: all 0.15s ease-in-out;
-  &:hover {
-    transform: scale(1.007);
   }
 }
 </style>

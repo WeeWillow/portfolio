@@ -1,50 +1,26 @@
 <script setup>
-import TabView from '@/components/layout/TabView.vue';
 </script>
 
 <template>
-  <!-- <TabView /> -->
-  <article class="layout-container">
-    <div class="raisedPlatform neum">
+  <article class="neum raisedPlatform">
       <h2>Skal vi arbejde sammen?</h2>
       <div class="form">
         <input type="email" class="inputContainer" placeholder="yourname@mail.com">
         <input type="email" class="inputContainer" placeholder="Type anything...">
         <input type="email" class="inputContainer" placeholder="Type anything...">
       </div>
-    </div>
   </article>
 </template>
 
 <style scoped>
-
-h1, h2 {
-  margin: 0 auto;
-  text-align: center;
-}
-
 article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .raisedPlatform {
-  width: 100%;
-  height: 40rem;
   padding: var(--base-400);
   border-radius: var(--rounded-general);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(autofit, min-content);
-  column-gap: var(--base-125);
-  row-gap: var(--base-125);
-  align-items: center;
-}
-
-.form {
-  grid-column: 3 / 5;
-  grid-row: 1 / 4;
 }
 
 .inputContainer {
@@ -76,4 +52,5 @@ article {
 input {
   transition: all 0.25s ease-in-out;
 }
+
 </style>

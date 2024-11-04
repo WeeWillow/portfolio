@@ -9,10 +9,11 @@ import ThemeButton from '@/components/ui/ThemeButton.vue'
 <template>
   <TheNav />
   <ThemeButton />
-  <main><router-view /></main>
+  <main>
+    <router-view />
+  </main>
   <TheFooter />
 </template>
 
 <style scoped>
-
 </style>
