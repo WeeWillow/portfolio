@@ -42,39 +42,42 @@ image {
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
+  
+  &.platform {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: var(--base-32x);
+    height: var(--base-32x);
+    border-radius: var(--round);
+    z-index: 300;
+    background: var(--background-base);
+    box-shadow: var(--neum-outset);
+  }
+
+  &.wave-1, &.wave-2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: var(--base-32x);
+    height: var(--base-32x);
+    border-radius: var(--round);
+    filter: blur(1px);
+    z-index: 100;
+  }
+  
+  &.wave-1 {
+    box-shadow: var(--neum-outset);
+    background: linear-gradient(to bottom right, var(--lowered) 0%, var(--raised) 100%);
+    animation: waves 8s linear infinite;
+  }
+  
+  &.wave-2 {
+    box-shadow: var(--neum-outset);
+    animation: waves 8s linear 4s infinite;
+  }
 }
 
-.platform {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  width: var(--base-32x);
-  height: var(--base-32x);
-  border-radius: var(--round);
-  z-index: 300;
-  background: var(--background-base);
-  box-shadow: var(--neum-outset);
-}
 
-.wave-1, .wave-2 {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  width: var(--base-32x);
-  height: var(--base-32x);
-  border-radius: var(--round);
-  filter: blur(1px);
-  z-index: 100;
-}
 
-.wave-1 {
-  box-shadow: var(--neum-outset);
-  background: linear-gradient(to bottom right, var(--lowered) 0%, var(--raised) 100%);
-  animation: waves 8s linear infinite;
-}
-
-.wave-2 {
-  box-shadow: var(--neum-outset);
-  animation: waves 8s linear 4s infinite;
-}
 
 @keyframes waves {
   0% {
