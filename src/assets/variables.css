@@ -44,6 +44,8 @@
   --base-450: 4.5rem; /* 72px */
   --base-550: 5.5rem; /* 88px */
   --base-900: 9rem; /* 144px */
+  --base-32x: 32rem; /* 512px */
+  --base-38x: 38rem; /* 608px */
 
   /* ------ other stuff -------- */
   --shadow-sharp: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
