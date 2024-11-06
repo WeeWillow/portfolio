@@ -1,5 +1,5 @@
 <script setup>
-import WavePortrait from '../other/wavePortrait.vue';
+import WavePortrait from '../other/WavePortrait.vue';
 </script>
 
 <template>
@@ -12,5 +12,6 @@ import WavePortrait from '../other/wavePortrait.vue';
 header {
   height: 70vh;
   width: auto;
+  display: grid;
 }
 </style>
