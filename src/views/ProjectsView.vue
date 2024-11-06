@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import CaseCardOne from '@/components/layout/CaseCardOne.vue'
+import CaseCardOne from '@/components/modules/CaseCardOne.vue'
 </script>
 
 <template>
