@@ -4,11 +4,20 @@ import { RouterView } from 'vue-router'
 import TheNav from '@/components/layout/TheNav.vue'
 import TheFooter from '@/components/layout/TheFooter.vue'
 import ThemeButton from '@/components/ui/ThemeButton.vue'
+import TheHeader from './components/layout/TheHeader.vue';
+import ScrollToTop from './components/ui/ScrollToTop.vue';
+
+// const route = useRoute();
+
+// computed property check route matching path
+// const showTheHeader = computed(() => route.name === 'home')
 </script>
 
 <template>
   <TheNav />
   <ThemeButton />
+  <ScrollToTop />
+  <TheHeader />
   <main>
     <router-view />
   </main>

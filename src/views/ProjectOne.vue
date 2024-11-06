@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 
 <template>
   <!-- Breadcrumb:
@@ -184,10 +181,6 @@
       <li>Det kan være nemt at glemme målet, og man bør have det i mente hele vejen igennem projektet.</li>
     </ul>
   </section>
-
-  <section class="margin-bottom toTop">
-    <RouterLink to="#" class="btn">Tilbage til top <span class="material-icons-outlined contact">arrow_circle_up</span></RouterLink>
-  </section>
   
 </template>
 
@@ -215,18 +208,6 @@ header {
   display: flex;
   gap: var(--base);
   margin: var(--base-200) 0;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-}
-
-section.toTop {
-  display: flex;
-  justify-content: center;
 }
 
 span {

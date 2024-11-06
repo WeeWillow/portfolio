@@ -12,6 +12,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      name: 'home',
       component: HomeView
     },
     {
@@ -31,7 +32,7 @@ const router = createRouter({
     },
     {
       path: '/projects/den-blaa-festival',
-      name: 'Den Blå Festival',
+      name: 'den blaa festival',
       props: true,
       component: ProjectOne
     },

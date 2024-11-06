@@ -47,12 +47,10 @@ a {
 
 nav {
   /* sizing */
-  width: 100%;
-  min-height: 4rem;
-  height: 6vh;
+  height: fit-content;
 
   /* positioning */
-  margin: var(--base-150) 0;
+  padding: var(--base) 0 0 0;
 }
 
 span {
@@ -66,7 +64,7 @@ span.contact {
 
 .nav-island {
   display: flex;
-  gap: var(--base-200);
+  gap: min(3vw, var(--base-125));
 }
 
 .nav-list {
