@@ -42,8 +42,14 @@
   --base-300: 3rem; /* 48px */
   --base-400: 4rem; /* 64px */
   --base-450: 4.5rem; /* 72px */
+  --base-500: 5rem; /* 80px */
   --base-550: 5.5rem; /* 88px */
   --base-900: 9rem; /* 144px */
+  --base-20x: 20rem; /* 320px */
+  --base-22x: 22rem; /* 352px */
+  --base-24x: 24rem; /* 384px */
+  --base-28x: 28rem; /* 448px */
+  --base-30x: 30rem; /* 440px */
   --base-32x: 32rem; /* 512px */
   --base-38x: 38rem; /* 608px */
 

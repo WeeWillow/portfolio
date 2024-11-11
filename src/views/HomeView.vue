@@ -5,23 +5,8 @@ import CaseCardOne from '@/components/modules/CaseCardOne.vue'
 </script>
 
 <template>
-  <section class="layout-container margin-bottom">
-    <div class="flexRow">
-      <div class="content">
-        <h1>Monica Djurhuus</h1>
-        <h2>Unicorn</h2>
-        <h2>UX/UI Designer</h2>
-        <h2>Frontender</h2>
-        <div class="buttons flexRow">
-          <RouterLink to="/contact" class="btn">Kontakt</RouterLink>
-          <RouterLink to="/projects" class="btn">Projekter</RouterLink>
-        </div>
-      </div>
-      <img src="../assets/img/Dandy Frog.jpeg" alt="placeholder frog">
-    </div>
-  </section>
 
-  <section class="layout-container margin-bottom">
+  <section>
     <h2>Noget om mig</h2>
     <div class="flexRow">
       <div class="icons">
@@ -73,20 +58,13 @@ import CaseCardOne from '@/components/modules/CaseCardOne.vue'
     </div>
   </section>
 
-  <section class="layout-container margin-bottom">
+  <section>
     <h2>Nylige projekter</h2>
     <CaseCardOne />
   </section>
 </template>
 
 <style scoped>
-h1 {
-  font-family: var(--font-title-special);
-  font-size: var(--base-450);
-  font-weight: 200;
-  line-height: 1;
-  margin-bottom: var(--base);
-}
 
 h2 {
   margin: var(--base) 0;

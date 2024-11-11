@@ -60,7 +60,7 @@ header {
 
 main {
   grid-row: 4;
-  padding: 5vh 0 7vh 0; /* ensure spacing from theme button and footer*/
+  padding: 0 0 7vh 0; /* ensure spacing from footer*/
 }
 
 footer {

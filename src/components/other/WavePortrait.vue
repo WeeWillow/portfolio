@@ -25,7 +25,6 @@ image {
   height: auto;
   width: 100%;
   object-fit: cover;
-  filter: opacity(80%);
   animation: filterRotate 8s linear infinite;
 }
 
@@ -35,6 +34,7 @@ image {
 
 /* based on the neumorphic elements by @myacode on codepen.io/myacode */
 .circle {
+  position: absolute;
   width: var(--base-38x);
   height: 100%;
   justify-self: center;
@@ -49,7 +49,7 @@ image {
     width: var(--base-32x);
     height: var(--base-32x);
     border-radius: var(--round);
-    z-index: 300;
+    z-index: 1;
     background: var(--background-base);
     box-shadow: var(--neum-outset);
   }
@@ -61,7 +61,7 @@ image {
     height: var(--base-32x);
     border-radius: var(--round);
     filter: blur(1px);
-    z-index: 100;
+    z-index: 0;
   }
   
   &.wave-1 {
@@ -75,9 +75,6 @@ image {
     animation: waves 8s linear 4s infinite;
   }
 }
-
-
-
 
 @keyframes waves {
   0% {
@@ -103,6 +100,38 @@ image {
   to {
     filter: contrast(80%) opacity(70%) saturate(40%) hue-rotate(360deg);
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .circle {
+  width: var(--base-32x);
+  
+  &.platform {
+    width: var(--base-30x);
+    height: var(--base-30x);
+  }
+
+  &.wave-1, &.wave-2 {
+    width: var(--base-30x);
+    height: var(--base-30x);
+  }
+}
+}
+
+@media screen and (max-width: 800px) {
+  .circle {
+  width: var(--base-28x);
+  
+  &.platform {
+    width: var(--base-22x);
+    height: var(--base-22x);
+  }
+
+  &.wave-1, &.wave-2 {
+    width: var(--base-22x);
+    height: var(--base-22x);
+  }
+}
 }
 
 </style>
