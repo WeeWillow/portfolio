@@ -1,10 +1,15 @@
+<script setup>
+import { cases } from '@/assets/data/cases';
+
+const aCase = cases[0];
+</script>
 
 <template>
   <!-- Breadcrumb:
   Projekter / Den blå festival -->
   <header class="layout-container margin-bottom">
     <section class="layout-container">
-      <h1>Den Blå Festival</h1>
+      <h1>{{ aCase.details.title }}</h1>
       <div>
         <div class="content">
           <h2>Type af projekt:</h2>
