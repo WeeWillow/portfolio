@@ -32,8 +32,6 @@
 </template>
 
 <style scoped lang="scss">
-@use 'sass:color';
-
   h2 {
     text-transform: capitalize;
   }
@@ -64,14 +62,6 @@
         font-size: 0.8rem;
         padding: 0.375rem .625rem;
         border-radius: .188rem;
-      }
-
-      .branding {
-        color: color.adjust(#d3b19a, $lightness: -40%);
-      }
-
-      .packaging {
-        color: color.adjust(#70b3b1, $lightness: -40%);
       }
     }
   }
