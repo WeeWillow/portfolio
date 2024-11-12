@@ -60,6 +60,8 @@ a {
   /* colour */
   color: var(--text-400);
   transition: all 0.2s ease-in-out;
+
+  background: var(--background-base);
 }
 
 nav {

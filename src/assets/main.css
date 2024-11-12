@@ -49,6 +49,7 @@ body {
 
 nav {
   grid-row: 1;
+  z-index: 999;
 }
 
 nav,

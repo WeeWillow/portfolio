@@ -34,6 +34,7 @@ image {
 
 /* based on the neumorphic elements by @myacode on codepen.io/myacode */
 .circle {
+  z-index: 4;
   position: absolute;
   width: var(--base-38x);
   height: 100%;
