@@ -8,12 +8,12 @@
       <h1>Monica Djurhuus</h1>
       <div class="details-container">
         <div class="tag">
-          <span class="tag-txt">
+          <span id="location" class="tag-txt">
             Aalborg
           </span>
         </div>
         <div class="tag">
-          <span class="tag-txt">
+          <span id="status" class="tag-txt">
             Åben for arbejde
           </span>
         </div>
@@ -21,11 +21,42 @@
     </div>
     <div id="title-container">
       <h2>Web-Udvikler</h2>
+      <div class="details-container">
+        <div class="tag">
+          <span id="designer" class="tag-txt">
+              UX/UI Designer
+          </span>
+        </div>
+        <div id="developer" class="tag">
+          <span class="tag-txt">
+            Frontend Udvikler
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.details-container {
+  display: flex;
+  gap: var(--base-50);
+  
+  .tag {
+    background: var(--primary-base);
+    padding: var(--base-50) var(--base-125);
+    border-radius: var(--round-general);
+
+    .tag-txt {
+      font-size: var(--base-btn-txt);
+      font-family: var(--font-body);
+      font-weight: 400;
+    }
+  }
+}
+
+
+
 .hero-content {
   position: relative;
   z-index: 10;
