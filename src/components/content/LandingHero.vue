@@ -4,10 +4,22 @@
 
 <template>
   <div class="hero-content">
-    <div id="name">
+    <div id="name-container">
       <h1>Monica Djurhuus</h1>
+      <div class="details-container">
+        <div class="tag">
+          <span class="tag-txt">
+            Aalborg
+          </span>
+        </div>
+        <div class="tag">
+          <span class="tag-txt">
+            Åben for arbejde
+          </span>
+        </div>
+      </div>
     </div>
-    <div id="title">
+    <div id="title-container">
       <h2>Web-Udvikler</h2>
     </div>
   </div>
@@ -29,17 +41,17 @@
   padding: var(--base-550);
 }
 
-#name, #title {
+#name-container, #title-container {
   position: absolute;
   width: 80%;
 }
 
-#name {
+#name-container {
   grid-column: 1 / 2;
   grid-row: 1;
 }
 
-#title {
+#title-container {
   grid-column: 2;
   grid-row: 2;
 
