@@ -36,6 +36,8 @@ onMounted(() => {
 <style scoped>
 
 button {
+  transform: translateX(-80px);
+  z-index: 20;
   /* grid layout */
   grid-column: 1 / -1;
   grid-row: 2;
@@ -50,14 +52,16 @@ button {
   height: var(--base-225);
   box-shadow: var(--shadow-sharp);
   border-radius: 0 var(--rounded-general) var(--rounded-general) 0;
-  padding: var(--base-25) var(--base-50);
+  padding: var(--base-25) var(--base-50) var(--base-25) var(--base-200);
   width: fit-content;
 
   /* text */
   font-size: var(--base);
-  transition: all 0.15s ease-in-out;
+  transition: transform 0.25s cubic-bezier(0.25, 1.5, 0.5, 1) .5s; /* going back in */
+
   &:hover {
-    transform: scale(1.007);
+    transform: translateX(-22px);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); /* going out */
   }
 }
 
