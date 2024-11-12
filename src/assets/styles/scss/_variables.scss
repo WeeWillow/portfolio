@@ -1,0 +1,63 @@
+// import
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Fascinate&family=Georama:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap");
+
+// -------------- variables --------------
+// ------ typography --------
+$font-title-special: "Fascinate", serif;
+$font-title: "Poiret One", sans-serif;
+$font-body: "Athiti", serif;
+$font-interface: "Georama", serif;
+
+// ------ gradients --------
+// generated with https://www.realtimecolors.com
+$linearPrimarySecondary: linear-gradient(#fee5d6, #aecbb3);
+$linearPrimaryAccent: linear-gradient(#fee5d6, #43658a);
+$linearSecondaryAccent: linear-gradient(#aecbb3, #43658a);
+$radialPrimarySecondary: radial-gradient(#fee5d6, #aecbb3);
+$radialPrimaryAccent: radial-gradient(#fee5d6, #43658a);
+$radialSecondaryAccent: radial-gradient(#aecbb3, #43658a);
+
+// ------ sizes --------
+// roundings
+$round-min: 4px;
+$round-50: 15px;
+$round-general: 30px;
+$round: 50%;
+// borders
+$border-lil: 2px;
+
+// ------------
+
+// attempt at consistent sizing - 🤞
+$base-25: 0.25rem; // 4px
+$base-50: 0.5rem; // 8px
+$base-75: 0.75rem; // 12px
+$base-btn-txt: 0.875rem; // 14px
+$base: 1rem; // 16px
+$base-125: 1.25rem; // 20px
+$base-150: 1.5rem; // 24px
+$base-200: 2rem; // 32px
+$base-225: 2.25rem; // 36px
+$base-250: 2.5rem; // 40px
+$base-300: 3rem; // 48px
+$base-400: 4rem; // 64px
+$base-450: 4.5rem; // 72px
+$base-500: 5rem; // 80px
+$base-550: 5.5rem; // 88px
+$base-900: 9rem; // 144px
+$base-20x: 20rem; // 320px
+$base-22x: 22rem; // 352px
+$base-24x: 24rem; // 384px
+$base-28x: 28rem; // 448px
+$base-30x: 30rem; // 440px
+$base-32x: 32rem; // 512px
+$base-38x: 38rem; // 608px
+
+// ------ other stuff --------
+$shadow-sharp: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+$neum-outset:
+  0.3rem 0.3rem 0.6rem $lowered,
+  -0.2rem -0.2rem 0.5rem $raised;
+$neum-inset:
+  inset 0.2rem 0.2rem 0.5rem $background-100,
+  inset -0.2rem -0.2rem 0.5rem $raised;

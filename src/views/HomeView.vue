@@ -2,6 +2,7 @@
 import { RouterLink } from 'vue-router'
 // import components
 import CaseCardOne from '@/components/modules/CaseCardOne.vue'
+import CaseCard from '@/components/modules/CaseCard.vue'
 </script>
 
 <template>
@@ -61,6 +62,9 @@ import CaseCardOne from '@/components/modules/CaseCardOne.vue'
   <section>
     <h2>Nylige projekter</h2>
     <CaseCardOne />
+  </section>
+  <section>
+    <CaseCard />
   </section>
 </template>
 

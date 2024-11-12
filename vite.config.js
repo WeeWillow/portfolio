@@ -12,5 +12,16 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // This is optional, but if you have global styles like variables or mixins
+        // you can import them here automatically
+        additionalData: `
+          @import "@/assets/styles/variables.scss";
+        `,
+      },
+    },
+  },
 })
