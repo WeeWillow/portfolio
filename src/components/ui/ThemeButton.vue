@@ -51,7 +51,7 @@ button {
   border: none;
   height: var(--base-225);
   box-shadow: var(--shadow-sharp);
-  border-radius: 0 var(--rounded-general) var(--rounded-general) 0;
+  border-radius: 0 var(--round-general) var(--round-general) 0;
   padding: var(--base-25) var(--base-50) var(--base-25) var(--base-200);
   width: fit-content;
 

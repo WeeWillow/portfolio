@@ -51,7 +51,7 @@ a {
   /* border */
   border: var(--border-lil) solid transparent;
   /* shape */
-  border-radius: var(--rounded-50);
+  border-radius: var(--round-50);
   padding: var(--base-50) var(--base);
   /* typography */
   font-family: var(--font-interface);

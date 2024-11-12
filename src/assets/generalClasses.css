@@ -13,7 +13,7 @@
 
 .btn {
   font-family: var(--font-interface);
-  border-radius: var(--rounded-general);
+  border-radius: var(--round-general);
   background: var(--primary-base);
   padding: var(--base) var(--base-200);
   box-shadow: var(--shadow-sharp);
@@ -26,11 +26,11 @@
 .neum-hover {
   box-shadow: var(--neum-outset);
   transition: all 0.25s ease-in-out;
-    &:hover {
-      background: var(--accent-100);
-      color: var(--accent-600);
-    }
-    &:active {
-      box-shadow: var(--neum-inset);
-    }
+  &:hover {
+    background: var(--accent-100);
+    color: var(--accent-600);
+  }
+  &:active {
+    box-shadow: var(--neum-inset);
+  }
 }

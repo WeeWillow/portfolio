@@ -36,7 +36,7 @@ article {
   grid-template-rows: var(--base-200) 1fr var(--base-200);
   gap: var(--base-200);
 
-  border-radius: var(--rounded-general);
+  border-radius: var(--round-general);
 }
 
 .contact-cover {

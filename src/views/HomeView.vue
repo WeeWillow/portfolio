@@ -87,7 +87,7 @@ h2 {
 
 img {
   border: 2px solid var(--secondary-200);
-  border-radius: var(--rounded-general);
+  border-radius: var(--round-general);
   padding: var(--base-50);
   transition: all 0.15s ease-in-out;
   &:hover {
@@ -108,7 +108,7 @@ img {
     background: var(--secondary-base);
     padding: var(--base-75);
     text-align: center;
-    border-radius: var(--rounded-50);
+    border-radius: var(--round-50);
   }
 }
 

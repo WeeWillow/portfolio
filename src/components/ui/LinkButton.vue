@@ -50,7 +50,7 @@ function clickHandler() {
 /* Styles for base buttons */
 button {
   padding: var(--base-75) var(--base);
-  border-radius: var(--rounded-min);
+  border-radius: var(--round-min);
   font-size: var(--base-btn-txt);
   border: none;
   box-shadow: var(--shadow-sharp);

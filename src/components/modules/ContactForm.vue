@@ -19,7 +19,7 @@
   /* visual */
   margin: var(--base-50) 0;
   border: none;
-  border-radius: var(--rounded-50);
+  border-radius: var(--round-50);
   padding-left: var(--base-125);
   background: none;
   box-shadow: var(--neum-inset);

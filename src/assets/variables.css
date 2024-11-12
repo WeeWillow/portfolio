@@ -4,7 +4,7 @@
 :root {
   /* ------ typography -------- */
   --font-title-special: "Fascinate", serif;
-  --font-title-general: "Poiret One", sans-serif;
+  --font-title: "Poiret One", sans-serif;
   --font-body: "Athiti", serif;
   --font-interface: "Georama", serif;
 
@@ -19,9 +19,9 @@
 
   /* ------ sizes -------- */
   /* roundings */
-  --rounded-min: 4px;
-  --rounded-50: 15px;
-  --rounded-general: 30px;
+  --round-min: 4px;
+  --round-50: 15px;
+  --round-general: 30px;
   --round: 50%;
   /* borders */
   --border-lil: 2px;

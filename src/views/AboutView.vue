@@ -66,7 +66,7 @@ h2 {
 .buttonBox {
   background: var(--background-50);
   padding: var(--base-200);
-  border-radius: var(--rounded-min);
+  border-radius: var(--round-min);
   box-shadow: var(--shadow-sharp);
 }
 </style>
