@@ -22,11 +22,15 @@
 .neum {
   box-shadow: var(--neum-outset);
   transition: all 0.25s ease-in-out;
-  &:hover {
-    background: var(--hover-background);
-    color: var(--secondary-400);
-  }
-  &:active {
-    box-shadow: var(--neum-inset);
-  }
+}
+.neum-hover {
+  box-shadow: var(--neum-outset);
+  transition: all 0.25s ease-in-out;
+    &:hover {
+      background: var(--accent-100);
+      color: var(--accent-600);
+    }
+    &:active {
+      box-shadow: var(--neum-inset);
+    }
 }

@@ -5,22 +5,39 @@ import { RouterLink } from 'vue-router'
 <template>
     <nav>
       <ul class="nav-list flexRow">
-        <li><RouterLink to="/" class="neum">Home</RouterLink></li>
+        <li><RouterLink to="/" class="neum-hover">Home</RouterLink></li>
         <div class="nav-island">
-          <li><RouterLink to="/about" class="flexRow neum">Om mig</RouterLink></li>
-          <li><RouterLink to="/projects" class="flexRow neum">Projekter</RouterLink></li>
-          <li><a class="flexRow neum" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer">GitHub <span class="material-icons-outlined">open_in_new</span></a></li>
+          <li><RouterLink to="/about" class="flexRow neum-hover">Om mig</RouterLink></li>
+          <li><RouterLink to="/projects" class="flexRow neum-hover">Projekter</RouterLink></li>
+          <li><a class="flexRow neum-hover" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer">GitHub <span class="material-icons-outlined">open_in_new</span></a></li>
         </div>
-        <li><RouterLink to="/contact" class="flexRow neum">Kontakt <span class="material-icons-outlined contact">email</span></RouterLink></li>
+        <li><RouterLink to="/contact" class="flexRow neum-hover">Kontakt <span class="material-icons-outlined contact">email</span></RouterLink></li>
       </ul>
     </nav>
 </template>
 
 <style scoped>
 .router-link-active {
-  background: var(--primary-50);
+  background: var(--hover-background);
   border-color: var(--secondary-300);
   color: var(--secondary-500);
+}
+
+[data-theme="light"] {
+  .router-link-active:hover {
+    border-color: var(--primary-300);
+    background: var(--primary-100);
+    color: var(--primary-500);
+  }
+  
+}
+[data-theme="dark"] {
+  .router-link-active:hover {
+    border-color: var(--primary-300);
+    background: var(--primary-100);
+    color: var(--primary-400);
+  }
+
 }
 
 .flexRow {
