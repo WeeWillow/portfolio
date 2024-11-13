@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import ContactView from '@/views/ContactView.vue'
-import ProjectGallery from '@/views/GalleryView.vue'
+import GalleryView from '@/views/GalleryView.vue'
 import ProjectDetail from '@/views/ProjectDetailView.vue'
 import ProjectOne from '@/views/ProjectOne.vue'
 
@@ -29,7 +29,7 @@ const router = createRouter({
     {
       path: '/projects',
       name: 'projects',
-      component: ProjectGallery,
+      component: GalleryView,
     },
     {
       path: '/project/:slug',
