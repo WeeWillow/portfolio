@@ -18,7 +18,7 @@ header {
   position: relative;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   header {
     height: 50vh;
   }
