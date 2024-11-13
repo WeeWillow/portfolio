@@ -24,7 +24,7 @@ document.addEventListener('scroll', () => {
   </button>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 button  {
   position: fixed;
   bottom: var(--base-200);

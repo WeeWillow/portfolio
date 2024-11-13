@@ -46,7 +46,7 @@ function clickHandler() {
 </a>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 /* Styles for base buttons */
 button {
   padding: var(--base-75) var(--base);

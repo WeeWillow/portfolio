@@ -10,7 +10,7 @@
 </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .inputContainer {
   /* size */
   width: 100%;

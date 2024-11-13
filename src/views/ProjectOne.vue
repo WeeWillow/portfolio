@@ -189,7 +189,7 @@ const aCase = cases[0];
   
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 h2 {
   margin: var(--base-50) 0;
 }

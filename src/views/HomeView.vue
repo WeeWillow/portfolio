@@ -68,7 +68,7 @@ import CaseCard from '@/components/modules/CaseCard.vue'
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 h2 {
   margin: var(--base) 0;

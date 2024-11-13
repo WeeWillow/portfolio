@@ -27,7 +27,7 @@
 
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 /* demo = the container */
 .demo {
   width: 80%;

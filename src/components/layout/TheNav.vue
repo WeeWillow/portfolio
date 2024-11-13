@@ -16,7 +16,7 @@ import { RouterLink } from 'vue-router'
     </nav>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .router-link-active {
   background: var(--hover-background);
   border-color: var(--secondary-300);

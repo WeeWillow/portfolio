@@ -21,7 +21,7 @@ import { RouterLink } from 'vue-router'
   </RouterLink>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 article {
   height: 300px;

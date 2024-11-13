@@ -9,7 +9,7 @@
 </footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 footer {
   background: var(--primary-200);
   padding: var(--base-250);

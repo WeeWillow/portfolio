@@ -33,7 +33,7 @@ onMounted(() => {
   </button>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 button {
   transform: translateX(-80px);

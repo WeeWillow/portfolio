@@ -37,7 +37,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .details-container {
   display: flex;
   gap: var(--base-50);

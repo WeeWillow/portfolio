@@ -9,7 +9,7 @@ import CaseCardOne from '@/components/modules/CaseCardOne.vue'
   <h2>We appreciate your patience</h2>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 h1,
 h2 {
   margin: 0 auto;

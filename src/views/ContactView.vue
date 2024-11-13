@@ -21,7 +21,7 @@ import ContactForm from '@/components/modules/ContactForm.vue';
   </article>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 article {
   height: 100%;
   width: 100%;

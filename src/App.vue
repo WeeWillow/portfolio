@@ -25,5 +25,5 @@ const showTheHeader = computed(() => route.name === 'home')
   <TheFooter />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

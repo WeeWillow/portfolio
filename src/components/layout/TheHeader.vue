@@ -10,7 +10,7 @@ import WavePortrait from '../other/WavePortrait.vue';
 </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   height: 70vh;
   width: auto;
