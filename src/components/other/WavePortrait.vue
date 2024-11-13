@@ -17,8 +17,8 @@
 
 <style scoped lang="scss">
 svg {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 image {
@@ -36,7 +36,6 @@ image {
 .circle {
   z-index: 4;
   position: absolute;
-  width: var(--base-38x);
   height: 100%;
   justify-self: center;
   display: grid;
@@ -47,8 +46,8 @@ image {
   &.platform {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    width: var(--base-32x);
-    height: var(--base-32x);
+    height: var(--base-30x);
+    width: var(--base-30x);
     border-radius: var(--round);
     z-index: 1;
     background: var(--background-base);
@@ -58,8 +57,8 @@ image {
   &.wave-1, &.wave-2 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    width: var(--base-32x);
-    height: var(--base-32x);
+    height: var(--base-30x);
+    width: var(--base-30x);
     border-radius: var(--round);
     filter: blur(1px);
     z-index: 0;
@@ -88,7 +87,7 @@ image {
   }
 
   100% {
-    transform: scale(1.6);
+    transform: scale(1.5);
     opacity: 0;
   }
 }
@@ -105,32 +104,46 @@ image {
 
 @media screen and (max-width: 1200px) {
   .circle {
-  width: var(--base-32x);
   
   &.platform {
-    width: var(--base-30x);
-    height: var(--base-30x);
+    height: var(--base-28x);
+    width: var(--base-28x);
   }
 
   &.wave-1, &.wave-2 {
-    width: var(--base-30x);
-    height: var(--base-30x);
+    height: var(--base-28x);
+    width: var(--base-28x);
+  }
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(.9);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
   }
 }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .circle {
-  width: var(--base-28x);
   
   &.platform {
-    width: var(--base-22x);
-    height: var(--base-22x);
+    height: var(--base-20x);
+    width: var(--base-20x);
   }
 
   &.wave-1, &.wave-2 {
-    width: var(--base-22x);
-    height: var(--base-22x);
+    height: var(--base-20x);
+    width: var(--base-20x);
   }
 }
 }
