@@ -44,6 +44,9 @@
   --base-450: 4.5rem; /* 72px */
   --base-500: 5rem; /* 80px */
   --base-550: 5.5rem; /* 88px */
+  --base-600: 6rem; /* 96px */
+  --base-650: 6.5rem; /* 104px */
+  --base-700: 7rem; /* 112px */
   --base-900: 9rem; /* 144px */
   --base-20x: 20rem; /* 320px */
   --base-22x: 22rem; /* 352px */
@@ -51,6 +54,7 @@
   --base-28x: 28rem; /* 448px */
   --base-30x: 30rem; /* 440px */
   --base-32x: 32rem; /* 512px */
+  --base-34x: 34rem; /* 544px */
   --base-38x: 38rem; /* 608px */
 
   /* ------ other stuff -------- */
