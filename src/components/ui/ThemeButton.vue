@@ -37,6 +37,9 @@ onMounted(() => {
 
 button {
   transform: translateX(-80px);
+  position: fixed;
+  top: 100px;
+  left: 0px;
   z-index: 20;
   /* grid layout */
   grid-column: 1 / -1;
@@ -50,10 +53,10 @@ button {
   /* shape */
   border: none;
   height: var(--base-225);
+  width: fit-content;
   box-shadow: var(--shadow-sharp);
   border-radius: 0 var(--round-general) var(--round-general) 0;
   padding: var(--base-25) var(--base-50) var(--base-25) var(--base-200);
-  width: fit-content;
 
   /* text */
   font-size: var(--base);
