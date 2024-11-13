@@ -164,13 +164,17 @@
   justify-content: center;
   align-items: center;
 
-  transition: transform 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 
   &:hover {
     background: var(--accent-100);
-    color: var(--accent-600);
-    transform: scale(1.05);
+    span {
+      color: var(--accent-400);
+      animation: spin 1s cubic-bezier(.25, 1.5, .2, 1);
+      transform: scale(1.5);
+    }
   }
+
   &:active {
     box-shadow: var(--neum-inset);
   }
@@ -178,6 +182,7 @@
   span {
     color: var(--text-500);
     font-size: var(--base-150);
+    transition: all 0.25s ease-in-out;
   }
 }
 
@@ -195,5 +200,13 @@
   }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
 
 </style>
