@@ -3,6 +3,7 @@ import { RouterLink } from 'vue-router'
 // import components
 import CaseCardOne from '@/components/modules/CaseCardOne.vue'
 import CaseCard from '@/components/modules/CaseCard.vue'
+import CardTest from '@/components/modules/cardTest.vue';
 </script>
 
 <template>
@@ -63,9 +64,8 @@ import CaseCard from '@/components/modules/CaseCard.vue'
     <h2>Nylige projekter</h2>
     <CaseCardOne />
   </section>
-  <section>
-    <CaseCard />
-  </section>
+  <CardTest/>
+  <CaseCard />
 </template>
 
 <style scoped lang="scss">
