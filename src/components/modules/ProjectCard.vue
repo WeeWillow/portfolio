@@ -50,6 +50,7 @@
 </template>
 
 <style scoped lang="scss">
+// design and code based on https://codepen.io/kristen17/pen/pomgrKp
 
 .project-card {
   ul {
