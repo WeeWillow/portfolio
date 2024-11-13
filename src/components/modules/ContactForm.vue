@@ -13,8 +13,8 @@
 <style scoped lang="scss">
 .inputContainer {
   /* size */
-  width: 100%;
   height: var(--base-300);
+  width: 100%;
 
   /* visual */
   margin: var(--base-50) 0;
