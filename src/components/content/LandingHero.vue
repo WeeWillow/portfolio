@@ -91,7 +91,7 @@
 
 h1, h2 {
   font-family: var(--font-title-special);
-  font-size: var(--base-550);
+  font-size: var(--base-650);
   font-weight: 200;
   line-height: 1;
   color: var(--accent-base);
@@ -111,7 +111,7 @@ h1, h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   
   #title {
     justify-self: center;
