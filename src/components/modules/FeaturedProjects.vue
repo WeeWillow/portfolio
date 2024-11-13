@@ -19,9 +19,7 @@ const featuredProjects = ref(cases.slice(0 , 3))
 
 <style scoped lang='scss'>
 .card-container {
-  margin: var(--base-150) 0;
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--base-20x), 1fr));
-  gap: var(--base-200);
+    gap: var(--base-200);
 }
 </style>

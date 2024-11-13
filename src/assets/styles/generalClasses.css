@@ -35,3 +35,9 @@
     box-shadow: var(--neum-inset);
   }
 }
+
+.projects-gallery, 
+.card-container {
+  margin: var(--base-150) 0;
+  display: grid;
+}

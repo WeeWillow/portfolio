@@ -16,9 +16,7 @@ const projects = ref(cases);
 
 <style scoped lang="scss">
 .projects-gallery {
-  margin: var(--base-150) 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--base-20x), 1fr));
-  gap: var(--base-200);
+  grid-template-columns: repeat(auto-fit, minmax(var(--base-30x), 1fr));
+  gap: var(--base-300);
 }
 </style>
