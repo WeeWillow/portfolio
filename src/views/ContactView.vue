@@ -46,13 +46,13 @@ article {
   grid-column: 1 / 3;
   grid-row: 1 / -1;
 
-  width: 100%;
   height: 100%;
+  width: 100%;
   overflow: hidden;
 
   img {
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
 
     filter: sepia(.3) opacity(.45) contrast(.25) blur(1px);
@@ -96,7 +96,7 @@ article {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .raisedPlatform {
     grid-template-columns: var(--base) 1fr .7fr var(--base);
     grid-template-rows: var(--base-75) 1fr var(--base-75);
