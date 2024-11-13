@@ -1,0 +1,199 @@
+<script setup>
+    import { useRouter, RouterLink } from 'vue-router';
+    import { defineProps, computed } from 'vue';
+
+    const props = defineProps({
+        project: {
+            type: Object,
+            required: true,
+        },
+    });
+
+    const router = useRouter();
+
+    const projectRoute = computed(() => ({
+        name: 'project-detail',
+        params: { slug: props.project.slug }
+    }));
+
+    const goToProject = () => {
+        router.push(projectRoute.value);
+    };
+
+    function tagsFlat(tags) {
+      return Object.values(tags).flat();
+    }
+</script>
+
+<template>
+    <article class="project-card"> <!-- singular card -->
+        <div class="cover"> <!-- image and button stuff -->
+          <div class="cover-container">
+            <div class="cover-image">
+              <img @click="goToProject" :src="project.cover" :alt="project.details.title">
+            </div>
+            <div class="cover-icon">
+              <RouterLink :to="projectRoute" class="cover-btn neum">
+                  <span class="material-icons-outlined">arrow_outward</span>
+              </RouterLink>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+            <h3>{{ project.details.title }}</h3>
+            <p>{{ project.details.desc }}</p>
+            <ul>
+              <li v-for="tag in tagsFlat(project.tags)" class="tag">{{ tag }}</li>
+            </ul>
+        </div>
+    </article>
+</template>
+
+<style scoped lang="scss">
+
+.project-card {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--base-75);
+
+    li.tag{
+      font-family: var(--font-interface);
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: var(--base-btn-txt);
+      padding: var(--base-25) var(--base-75);
+      border-radius: var(--round-min);
+      
+      &:nth-of-type(1) {
+        background: var(--accent-300);
+        color: var(--accent-600);
+      }
+      &:nth-of-type(2) {
+        background: var(--secondary-300);
+        color: var(--secondary-600);
+      }
+      &:nth-of-type(3) {
+        background: var(--primary-200);
+        color: var(--primary-600);
+      }
+      &:nth-of-type(4) {
+        background: var(--background-300);
+        color: var(--background-700);
+      }
+    }
+  }
+}
+
+.cover {
+  position: relative;
+  height: var(--base-20x);
+  width: inherit;
+  background: var(--background-base);
+  border-radius: var(--round-50) var(--round-50) 0 var(--round-50);
+  overflow: hidden;
+
+  .cover-container {
+    height: 100%;
+    width: 100%;
+    background: var(--background-base);
+    border-radius: var(--round-50);
+    overflow: hidden;
+
+    .cover-image {
+      position: absolute;
+      inset: 0;
+      background: var(--primary-100);
+
+      img {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.cover-icon {
+  position: absolute;
+  // bottom: -var(--base-25);
+  bottom: calc(-1 * var(--base-25));
+  right: calc(-1 * var(--base-25));
+
+  height: var(--base-600);
+  width: var(--base-600);
+
+  background: var(--background-base);
+  border-top-left-radius: var(--round);
+
+  &::before, &::after {
+    position: absolute;
+    content: '';
+    background: transparent;
+    height: var(--base-125);
+    width: var(--base-125);
+    border-bottom-right-radius: var(--round-50);
+    box-shadow: var(--base-25) var(--base-25) 0 var(--base-25) var(--background-base);
+  }
+
+  &::before {
+    bottom: var(--base-25);
+    left: calc(-1 * var(--base-125));
+  }
+
+  &::after {
+    top: calc(-1 * var(--base-125));
+    right: var(--base-25);
+  }
+
+}
+
+.cover-btn {
+  position: absolute;
+  inset: var(--base-75);
+  background: var(--background-base);
+  border-radius: var(--round);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.25s ease-in-out;
+
+  &:hover {
+    background: var(--accent-100);
+    color: var(--accent-600);
+    transform: scale(1.05);
+  }
+  &:active {
+    box-shadow: var(--neum-inset);
+  }
+
+  span {
+    color: var(--text-500);
+    font-size: var(--base-150);
+  }
+}
+
+.content {
+  padding: var(--base) var(--base-75);
+
+  h3 {
+    font-size: var(--base-150);
+  }
+
+  p {
+    min-height: var(--base-450); 
+    max-height: 7vh; 
+    margin: var(--base-75) 0 var(--base-125);
+  }
+}
+
+
+</style>

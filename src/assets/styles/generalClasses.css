@@ -23,6 +23,7 @@
   box-shadow: var(--neum-outset);
   transition: all 0.25s ease-in-out;
 }
+
 .neum-hover {
   box-shadow: var(--neum-outset);
   transition: all 0.25s ease-in-out;
