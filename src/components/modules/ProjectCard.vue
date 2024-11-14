@@ -1,7 +1,11 @@
 <script setup>
-  import { useRouter, RouterLink } from 'vue-router';
-  import { defineProps, computed } from 'vue';
-
+  import { useRouter, RouterLink } from 'vue-router'; 
+  // import of useRouter for navigation with goToProject and @click
+  // import RouterLink for linking in vue-router
+  
+  import { computed } from 'vue';
+  // import 'computed' to create reactive vue props
+  
   const props = defineProps({
     project: {
       type: Object,
@@ -57,7 +61,7 @@
 
 .project-card {
   max-width: 100%;
-  
+
   ul {
     margin: 0;
     padding: 0;
@@ -213,6 +217,18 @@
   100% {
     transform: rotate(360deg) scale(1.5);
   }
+}
+
+@media screen and (max-width: 700px) {
+  .cover {
+  height: var(--base-900);
+}
+
+.content {
+  p {
+    max-height: 80vh; 
+  }
+}
 }
 
 </style>
