@@ -26,10 +26,4 @@ const showTheHeader = computed(() => route.name === 'home')
 </template>
 
 <style scoped lang="scss">
-main {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  gap: var(--base-900);
-}
 </style>

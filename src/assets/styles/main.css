@@ -64,6 +64,11 @@ header {
 
 main {
   grid-row: 3;
+  
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: var(--base-700);
 }
 
 footer {

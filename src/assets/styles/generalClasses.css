@@ -36,8 +36,9 @@
   }
 }
 
-.projects-gallery, 
 .card-container {
+  grid-template-columns: repeat(auto-fit, minmax(var(--base-20x), 1fr));
+  gap: var(--base-200);
   margin: var(--base-150) 0;
   display: grid;
 }

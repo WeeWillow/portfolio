@@ -18,8 +18,4 @@ const featuredProjects = ref(cases.slice(0 , 3))
 </template>
 
 <style scoped lang='scss'>
-.card-container {
-  grid-template-columns: repeat(auto-fit, minmax(var(--base-20x), 1fr));
-    gap: var(--base-200);
-}
 </style>
