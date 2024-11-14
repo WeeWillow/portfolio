@@ -9,9 +9,9 @@ import { RouterLink } from 'vue-router'
         <div class="nav-island">
           <li><RouterLink to="/about" class="flexRow neum-hover">Om mig</RouterLink></li>
           <li><RouterLink to="/projects" class="flexRow neum-hover">Projekter</RouterLink></li>
-          <li><a class="flexRow neum-hover" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer">GitHub <span class="material-icons-outlined">open_in_new</span></a></li>
+          <li><a class="flexRow neum-hover" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer"><span class="hidden">GitHub</span><span class="material-icons-outlined">open_in_new</span></a></li>
         </div>
-        <li><RouterLink to="/contact" class="flexRow neum-hover">Kontakt <span class="material-icons-outlined contact">email</span></RouterLink></li>
+        <li><RouterLink to="/contact" class="flexRow neum-hover"><span class="hidden">Kontakt</span><span class="material-icons-outlined contact">email</span></RouterLink></li>
       </ul>
     </nav>
 </template>
@@ -96,4 +96,31 @@ span.contact {
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .hidden {
+    display: none;
+  }
+
+  a {
+    font-size: var(--base-btn-txt);
+    padding: var(--base-50) var(--base-75);
+  }
+
+  span.contact {
+    font-size: var(--base-125);
+  }
+  
+  .nav-island { 
+    gap: var(--base-50);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  span.contact {
+    font-size: var(--base);
+  }
+  
+}
+
 </style>
