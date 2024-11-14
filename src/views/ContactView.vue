@@ -4,17 +4,15 @@ import ContactForm from '@/components/modules/ContactForm.vue';
 </script>
 
 <template>
-  <h1>Skal vi arbejde sammen?</h1>
   <section>
     <article class="neum raisedPlatform">
       <div class="contact-cover">
         <img src="/assets/img/sunflowers.jpg" alt="field of sunflowers, credit to kilarov zaneit, unsplash">
       </div>
-  
+      
       <div class="cover-content">
-        <h2>Skal vi arbejde sammen?</h2>
+        <h1>Skal vi arbejde sammen?</h1>
       </div>
-  
   
       <section class="contact-form">
         <ContactForm />
@@ -37,7 +35,7 @@ article {
   display: grid;
   grid-template-columns: var(--base-200) 1fr .7fr var(--base-200);
   grid-template-rows: var(--base-200) 1fr var(--base-200);
-  gap: var(--base-200);
+  gap: var(--base);
 
   border-radius: var(--round-general);
 }

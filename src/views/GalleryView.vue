@@ -9,14 +9,14 @@ const projects = ref(cases);
 </script>
 
 <template>
-<section class="projects-gallery">
-  <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+<section>
+  <h1>Udforsk mine projekter</h1>
+  <div class="card-container">
+    <!-- for loop for "projects" based on "cases" within case_data.js file -->
+    <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+  </div>
 </section>
 </template>
 
 <style scoped lang="scss">
-.projects-gallery {
-  grid-template-columns: repeat(auto-fit, minmax(var(--base-30x), 1fr));
-  gap: var(--base-300);
-}
 </style>
