@@ -5,7 +5,10 @@ import { RouterLink } from 'vue-router'
 <template>
     <nav>
       <ul class="nav-list flexRow">
-        <li><RouterLink to="/" class="neum-hover">Home</RouterLink></li>
+        <li>
+          <RouterLink to="/" class="logo neum-hover">
+            <img src="/assets/img/logo.png" alt="illustration of a dragon head">
+          </RouterLink></li>
         <div class="nav-island">
           <li><RouterLink to="/about" class="flexRow neum-hover">Om mig</RouterLink></li>
           <li><RouterLink to="/projects" class="flexRow neum-hover">Projekter</RouterLink></li>
@@ -64,6 +67,37 @@ a {
   background: var(--background-base);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: var(--base-400);
+  width: var(--base-400);
+  border-radius: var(--round);
+  padding: var(--base);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  background: var(--background-base);
+  
+  img {
+  object-fit: cover;
+  height: auto;
+  width: calc(var(--base-400) - var(--base-50));
+  transition: all 0.2s ease-in-out;
+  filter: saturate(1.5);
+    &:active {
+      opacity: 50%;
+    }
+  }
+
+  &:hover {
+  filter: saturate(1.5);
+  background: var(--accent-100);
+  }
+
+}
+
 nav {
   /* sizing */
   height: fit-content;
@@ -84,6 +118,7 @@ span.contact {
 .nav-island {
   display: flex;
   gap: min(3vw, var(--base-125));
+  margin: 0 var(--base-25);
 }
 
 .nav-list {
