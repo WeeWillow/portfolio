@@ -6,31 +6,28 @@ import { cases } from '@/assets/data/case_data';
 const route = useRoute();
 const project = ref(null);
 
-// const headerImg = computed(() => {
-//   return project.value ? `/assets/cases/${project.intro.img}` : ''
-// }) ;
+const props = defineProps({
+  slug: String,
+});
 
-// dynamically generate img after project is computed
+// dynamically generate img after project is set
 const headerImg = computed(() => {
   // set image only after project data is available
-  // return whole project and img from data
+  // return project image path from data
   return project.value && project.value.intro.img
-  // if img, then return the data
     ? `/assets/cases/${project.value.intro.img}`
-    : '';  // if no image, return empty string if no image
+    : '';  // if no image, return empty string
 });
 
 onMounted(() => {
   const slug = route.params.slug;
   project.value = cases.find(p => p.slug === slug);
 });
-
-
 </script>
 
 <template>
-<div v-if="project" class="project-detail">
-  <header>
+<section v-if="project" class="project-detail">
+  <div id="header">
     <h1>{{ project.details.title }}</h1>
     <div class="header-content">
       <article>
@@ -52,18 +49,23 @@ onMounted(() => {
       <!-- bind project title to alt + some descriptive text -->
       <img v-if="headerImg" :src="headerImg" :alt="`billede af ${project.details.title} projekt`" class="header-image">
     </div>
-  </header>
+  </div>
+</section>
 
-  <div>
-      <h2>Tags</h2>
-      <p><strong>Roller:</strong> {{ project.tags.roles.join(', ') || 'None' }}</p>
-      <p><strong>Type:</strong> {{ project.tags.type.join(', ') || 'None' }}</p>
-      <p><strong>Approach:</strong> {{ project.tags.approach.join(', ') || 'None' }}</p>
-    </div>
-  </div>
-  <div v-else>
-    <p>Project not found.</p>
-  </div>
+
+<section v-else>
+  <p>Project not found.</p>
+</section>
+
+<article v-if="project" v-for="article in project.articles" :key="article.id" >
+  <h2>{{ article.title }}</h2>
+  <section v-for="section in article.sections" :key="section.id">
+    <h3>{{ section.title }}</h3>
+    <p>{{ section.content }}</p>
+  </section>
+</article>
+
+
 
 </template>
 
@@ -74,21 +76,21 @@ onMounted(() => {
   display: flex;
   gap: var(--base-200);
   justify-content: space-between;
-  height: 60vh;
+  // height: 60vh;
   width: 100%;
   
   img {
     border-radius: var(--round-general);
     height: auto;
-    width: 60%;
-    overflow: hidden;
-    object-fit: cover;
+    width: 50%;
+    object-fit: contain;
+    object-position: 0 -80px;
   }
 
   section {
     p {
       font-size: var(--base);
-      max-width: 70ch;
+      max-width: 60ch;
     }
   }
 }
@@ -130,15 +132,13 @@ onMounted(() => {
 .project-detail {
   padding: 20px;
 }
-
 h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  margin: 0 0 var(--base-300) 0;
 }
 
 h2 {
-  margin-top: 20px;
-  font-size: 1.5em;
+  margin: var(--base-75) 0;
+  font-size: var(--base-250);
 }
 
 p {
