@@ -2,8 +2,23 @@
 </script>
 
 <template>
-  <h1>Under construction - Om mig</h1>
-  <h2>We appreciate your patience</h2>
+  <section>
+    <h1>Hvem er jeg?</h1>
+    <p>section 1</p>
+    <p>billede af mig eller noget</p>
+  </section>
+  <section>
+    <p>section 2</p>
+    <p>lidt om mine interesser</p>
+  </section>
+  <section>
+    <p>section 3</p>
+    <p>lidt relevant til faglighed</p>
+  </section>
+  <section>
+    <p>section 4</p>
+    <p>lidt om mine erfaringer</p>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -18,7 +33,7 @@
 h1,
 h2 {
   margin: 0 auto;
-  text-align: center;
+  // text-align: center;
 }
 
 .flexRow {
