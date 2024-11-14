@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router'
         <div class="nav-island">
           <li><RouterLink to="/about" class="flexRow neum-hover">Om mig</RouterLink></li>
           <li><RouterLink to="/projects" class="flexRow neum-hover">Projekter</RouterLink></li>
-          <li><a class="flexRow neum-hover" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer"><span class="hidden">GitHub</span><span class="material-icons-outlined">open_in_new</span></a></li>
+          <li><a class="flexRow neum-hover" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer"><span class="hidden">GitHub</span><font-awesome-icon icon="fa-brands fa-github" /></a></li>
         </div>
         <li><RouterLink to="/contact" class="flexRow neum-hover"><span class="hidden">Kontakt</span><span class="material-icons-outlined contact">email</span></RouterLink></li>
       </ul>
