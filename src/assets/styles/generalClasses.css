@@ -19,6 +19,10 @@
   box-shadow: var(--shadow-sharp);
 }
 
+/* neumorphism is an established visual design, that I did not come up with*/
+/* https://en.wikipedia.org/wiki/Neumorphism */
+/* it has been critisised for lack of contrast, and I am aware of this in my choice to use it */
+
 .neum {
   box-shadow: var(--neum-outset);
   transition: all 0.25s ease-in-out;

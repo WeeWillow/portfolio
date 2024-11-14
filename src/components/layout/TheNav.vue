@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink } from 'vue-router' // import router link, to navigate to other pages
 </script>
 
 <template>
@@ -10,6 +10,7 @@ import { RouterLink } from 'vue-router'
             <img src="/assets/img/logo.png" alt="illustration of a dragon head">
           </RouterLink></li>
         <div class="nav-island">
+          <!-- router link instead of a tags to link between views/routes -->
           <li><RouterLink to="/about" class="flexRow neum-hover">Om mig</RouterLink></li>
           <li><RouterLink to="/projects" class="flexRow neum-hover">Projekter</RouterLink></li>
           <li><a class="flexRow neum-hover" href="https://github.com/WeeWillow" target="_blank" rel="noopener noreferrer"><span class="hidden">GitHub</span><font-awesome-icon icon="fa-brands fa-github" /></a></li>

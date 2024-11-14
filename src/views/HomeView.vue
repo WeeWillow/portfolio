@@ -5,6 +5,7 @@ import FeaturedProjects from '@/components/modules/FeaturedProjects.vue';
 </script>
 
 <template>
+  <!-- use components -->
   <AboutIntro/>
   <FeaturedProjects/>
 </template>

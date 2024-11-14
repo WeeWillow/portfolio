@@ -12,6 +12,7 @@ const featuredProjects = ref(cases.slice(0 , 3))
 <section>
   <h2>Udvalgte Projekter</h2>
   <div class="card-container">
+    <!-- v for loop through cases data for each project -->
     <ProjectCard v-for="project in featuredProjects" :key="project.id" :project="project" />
   </div>
 </section>

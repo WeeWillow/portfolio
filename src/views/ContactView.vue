@@ -1,4 +1,5 @@
 <script setup>
+// import components
 import ContactForm from '@/components/modules/ContactForm.vue';
 
 </script>

@@ -1,33 +1,44 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue';
+
 // state
 const currentTheme = ref('light');
 
+// light mode icon
 const lightIcon = 'brightness_low';
+// dark mode icon
 const darkIcon = 'bedtime';
 
 // functions
 function toggleTheme() {
+  // toggle light and dark theme
   currentTheme.value = currentTheme.value === 'light' ? 'dark' : 'light';
+  // set theme on root
   document.documentElement.setAttribute('data-theme', currentTheme.value);
+  // save current theme in localStorage
   localStorage.setItem('theme', currentTheme.value)
 };
 
 const themeIcon = computed(() => {
+  // return icon based on theme
   return currentTheme.value === 'light' ? darkIcon : lightIcon;
 });
 
 // check localStorage for saved theme on mount
 onMounted(() => {
+  // get saved theme from localStorage
   const savedTheme = localStorage.getItem('theme');
+  // set theme if saved
   if (savedTheme) {
     currentTheme.value = savedTheme;
   }
+  // set theme on root on load
   document.documentElement.setAttribute('data-theme', currentTheme.value);
 });
 </script>
 
 <template>
+  <!-- on click, toggle theme -->
   <button type="button" @click="toggleTheme">
     Theme <span class="material-icons-outlined">{{ themeIcon }}</span>
   </button>

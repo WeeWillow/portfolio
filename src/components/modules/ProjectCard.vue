@@ -1,11 +1,12 @@
 <script setup>
+  // import useRouter for navigation with goToProject and @click
+  // import RouterLink for vue-router links in template
   import { useRouter, RouterLink } from 'vue-router'; 
-  // import of useRouter for navigation with goToProject and @click
-  // import RouterLink for linking in vue-router
   
+  // import computed to create reactive properties
   import { computed } from 'vue';
-  // import 'computed' to create reactive vue props
   
+  // define props to accept project data for route and img based on project slug
   const props = defineProps({
     project: {
       type: Object,
@@ -13,30 +14,37 @@
     },
   });
 
+  // set up router for navigation in goToProject
   const router = useRouter();
 
+
+  // create computed route object to pass slug to project-detail route
   const projectRoute = computed(() => ({
     name: 'project-detail',
     params: { slug: props.project.slug }
   }));
 
+  // go to project-detail route when goToProject is clicked
   const goToProject = () => {
     router.push(projectRoute.value);
   };
 
+  // flatten array of tags for use in templates etc
   function tagsFlat(tags) {
     return Object.values(tags).flat();
   };
 
+  // dynamic cover image url based on project cover data
   const coverImageURL = `/assets/cases/${props.project.cover}`;
   
 </script>
 
 <template>
-    <article class="project-card"> <!-- singular card -->
-        <div class="cover"> <!-- image and button stuff -->
+    <article class="project-card">
+        <div class="cover">
           <div class="cover-container">
-            <div @click="goToProject" class="cover-image">
+            <!-- go -->
+            <div @click="goToProject" class="cover-image"> 
               <img :src="coverImageURL" :alt="project.details.title">
             </div>
             <div class="cover-icon">
@@ -213,15 +221,6 @@
     min-height: var(--base-450); 
     max-height: 7vh; 
     margin: var(--base-75) 0 var(--base-125);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  100% {
-    transform: rotate(360deg) scale(1.5);
   }
 }
 

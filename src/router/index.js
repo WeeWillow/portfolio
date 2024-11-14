@@ -37,6 +37,8 @@ const router = createRouter({
       props: true,
     },
   ],
+  // if something has a saved position, it will use it
+  // otherwise return to top of new page
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
