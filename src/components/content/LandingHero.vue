@@ -9,12 +9,12 @@
       <div class="details-container">
         <div class="tag">
           <span id="location" class="tag-txt">
-            Aalborg
+            <span class="material-icons-outlined">place</span> Aalborg
           </span>
         </div>
         <div class="tag">
           <span id="status" class="tag-txt">
-            Åben for arbejde
+            <span class="pulse-circle"></span> Åben for arbejde
           </span>
         </div>
       </div>
@@ -60,16 +60,12 @@
 .hero-content {
   position: relative;
   z-index: 10;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   align-content: center;
-
-  gap: var(--base-500);
-
   height: 100%;
-  padding: var(--base-550);
+  margin: var(--base) var(--base-450);
 }
 
 #name-container, #title-container {
@@ -78,13 +74,13 @@
 }
 
 #name-container {
-  grid-column: 1 / 2;
-  grid-row: 1;
+  grid-column: 1 / span 1;
+  grid-row: 0;
 }
 
 #title-container {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2 / span 1;
+  grid-row: 1;
 
   justify-self: end;
 }
@@ -97,30 +93,77 @@ h1, h2 {
   color: var(--accent-base);
 }
 
-@media screen and (max-width: 1200px) {
-  .hero-content {
-    padding: var(--base-300) var(--base);
-  }
+.pulse-circle {
+  display: inline-block;
+  height: var(--base-btn-txt);
+  width: var(--base-btn-txt);
+  background-color: var(--secondary-500);
+  border-radius: 50%; 
+  animation: pulse 2s infinite;
+}
 
-  #title {
-    justify-self: center;
+@keyframes pulse {
+  0% {
+    transform: scale(.9);
+    opacity: 1;
   }
-  
+  50% {
+    transform: scale(.7);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(.9);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   h1, h2 {
     font-size: var(--base-500);
   }
 }
 
-@media screen and (max-width: 900px) {
-  
-  #title {
-    justify-self: center;
-    width: auto;
-  }
-  
-  
+@media screen and (max-width: 900px) { 
+  .hero-content {
+  gap: var(--base-20);
+  margin: var(--base) var(--base);
+}
   h1, h2 {
     font-size: var(--base-400);
   }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  }
+
+  #name-container, #title-container {
+  position: relative;
+  width: 100%;
+  }
+
+  h1, h2 {
+    font-size: var(--base-200);
+  }
+  
+  .details-container {  
+    width: 70vw;
+    justify-content: center;
+    margin: var(--base-25) 0;
+    .tag {
+      padding: var(--base-50) var(--base-125);
+      
+      .tag-txt {
+      font-size: var(--base-75);
+    }
+  }
+}
 }
 </style>
