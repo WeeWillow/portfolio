@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <div class="hero-content">
     <div id="name-container">
@@ -38,11 +34,26 @@
 </template>
 
 <style scoped lang="scss">
-.details-container {
+
+#location, #status {
   display: flex;
-  gap: var(--base-50);
+   align-items: center;
+   gap: var(--base-50);
+   span {
+      font-size: var(--base);
+    }
+  }
   
-  .tag {
+  .details-container {
+    display: flex;
+    gap: var(--base-50);
+
+    margin: var(--base) 0;
+
+    .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--primary-base);
     padding: var(--base-50) var(--base-125);
     border-radius: var(--round-general);
@@ -50,12 +61,21 @@
     .tag-txt {
       font-size: var(--base-btn-txt);
       font-family: var(--font-body);
-      font-weight: 400;
+      font-weight: 600;
     }
   }
 }
 
-
+.tag {
+  &:nth-of-type(1) {
+      background: var(--primary-200);
+      color: var(--primary-700);
+    }
+    &:nth-of-type(2) {
+      background: var(--secondary-200);
+      color: var(--secondary-800);
+    }
+}
 
 .hero-content {
   position: relative;
