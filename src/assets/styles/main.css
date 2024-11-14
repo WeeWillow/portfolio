@@ -118,6 +118,15 @@ li::marker {
   color: var(--primary-400);
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+
 /* global font styling end */
 /*  */
 /*  */
