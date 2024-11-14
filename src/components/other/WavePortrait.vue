@@ -7,7 +7,7 @@
             <circle cx="50" cy="50" r="49.5" fill="white"/>
           </mask>
         </defs>
-        <image x="0" y="-10" xlink:href="@/assets/img/fancyHands.jpg" mask="url(#shape-mask)" />
+        <image x="0" y="-10" xlink:href="/assets/img/fancyHands.jpg" mask="url(#shape-mask)" />
       </svg>
     </span>
     <span class="circle wave-1 no-touch"></span>

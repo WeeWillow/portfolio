@@ -7,7 +7,7 @@ import ContactForm from '@/components/modules/ContactForm.vue';
   <article class="neum raisedPlatform">
     <div class="contact-cover">
       <!-- https://unsplash.com/photos/sunflower-field-W9KtH3U2RmY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-      <img src="@/assets/img/sunflowers.jpg" alt="field of sunflowers, credit to kilarov zaneit, unsplash">
+      <img src="/assets/img/sunflowers.jpg" alt="field of sunflowers, credit to kilarov zaneit, unsplash">
     </div>
 
     <div class="cover-content">

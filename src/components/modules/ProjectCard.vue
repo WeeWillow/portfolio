@@ -1,36 +1,39 @@
 <script setup>
-    import { useRouter, RouterLink } from 'vue-router';
-    import { defineProps, computed } from 'vue';
+  import { useRouter, RouterLink } from 'vue-router';
+  import { defineProps, computed } from 'vue';
 
-    const props = defineProps({
-        project: {
-            type: Object,
-            required: true,
-        },
-    });
+  const props = defineProps({
+    project: {
+      type: Object,
+        required: true,
+    },
+  });
 
-    const router = useRouter();
+  const router = useRouter();
 
-    const projectRoute = computed(() => ({
-        name: 'project-detail',
-        params: { slug: props.project.slug }
-    }));
+  const projectRoute = computed(() => ({
+    name: 'project-detail',
+    params: { slug: props.project.slug }
+  }));
 
-    const goToProject = () => {
-        router.push(projectRoute.value);
-    };
+  const goToProject = () => {
+    router.push(projectRoute.value);
+  };
 
-    function tagsFlat(tags) {
-      return Object.values(tags).flat();
-    }
+  function tagsFlat(tags) {
+    return Object.values(tags).flat();
+  };
+
+  const coverImageURL = `/assets/img/${props.project.cover}`;
+  
 </script>
 
 <template>
     <article class="project-card"> <!-- singular card -->
         <div class="cover"> <!-- image and button stuff -->
           <div class="cover-container">
-            <div class="cover-image">
-              <img @click="goToProject" :src="project.cover" :alt="project.details.title">
+            <div @click="goToProject" class="cover-image">
+              <img :src="coverImageURL" :alt="project.details.title">
             </div>
             <div class="cover-icon">
               <RouterLink :to="projectRoute" class="cover-btn neum">
@@ -53,6 +56,8 @@
 // design and code based on https://codepen.io/kristen17/pen/pomgrKp
 
 .project-card {
+  max-width: 100%;
+  
   ul {
     margin: 0;
     padding: 0;
@@ -107,12 +112,12 @@
     overflow: hidden;
 
     .cover-image {
+      cursor: pointer;
       position: absolute;
       inset: 0;
       background: var(--primary-100);
 
       img {
-        cursor: pointer;
         height: 100%;
         width: 100%;
         object-fit: cover;

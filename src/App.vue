@@ -5,8 +5,8 @@ import { RouterView, useRoute } from 'vue-router'
 import TheNav from '@/components/layout/TheNav.vue'
 import TheFooter from '@/components/layout/TheFooter.vue'
 import ThemeButton from '@/components/ui/ThemeButton.vue'
-import TheHeader from './components/layout/TheHeader.vue';
-import ScrollToTop from './components/ui/ScrollToTop.vue';
+import TheHeader from '@/components/layout/TheHeader.vue';
+import ScrollToTop from '@/components/ui/ScrollToTop.vue';
 
 const route = useRoute();
 
