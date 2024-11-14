@@ -65,12 +65,14 @@ image {
   }
   
   &.wave-1 {
+    position: absolute;
     box-shadow: var(--neum-outset);
     background: linear-gradient(to bottom right, var(--lowered) 0%, var(--raised) 100%);
     animation: waves 8s linear infinite;
   }
   
   &.wave-2 {
+    position: absolute;
     box-shadow: var(--neum-outset);
     animation: waves 8s linear 4s infinite;
   }
@@ -144,6 +146,21 @@ image {
   &.wave-1, &.wave-2 {
     height: var(--base-20x);
     width: var(--base-20x);
+  }
+}
+}
+
+@media screen and (max-width: 600px) {
+  .circle {
+  
+  &.platform {
+    height: var(--base-16x);
+    width: var(--base-16x);
+  }
+
+  &.wave-1, &.wave-2 {
+    height: var(--base-16x);
+    width: var(--base-16x);
   }
 }
 }
