@@ -4,24 +4,27 @@ import ContactForm from '@/components/modules/ContactForm.vue';
 </script>
 
 <template>
-  <article class="neum raisedPlatform">
-    <div class="contact-cover">
-      <!-- https://unsplash.com/photos/sunflower-field-W9KtH3U2RmY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
-      <img src="/assets/img/sunflowers.jpg" alt="field of sunflowers, credit to kilarov zaneit, unsplash">
-    </div>
-
-    <div class="cover-content">
-      <h2>Skal vi arbejde sammen?</h2>
-    </div>
-
-
-    <section class="contact-form">
-      <ContactForm />
-    </section>
-  </article>
+  <h1>Skal vi arbejde sammen?</h1>
+  <section>
+    <article class="neum raisedPlatform">
+      <div class="contact-cover">
+        <img src="/assets/img/sunflowers.jpg" alt="field of sunflowers, credit to kilarov zaneit, unsplash">
+      </div>
+  
+      <div class="cover-content">
+        <h2>Skal vi arbejde sammen?</h2>
+      </div>
+  
+  
+      <section class="contact-form">
+        <ContactForm />
+      </section>
+    </article>
+  </section>
 </template>
 
 <style scoped lang="scss">
+
 article {
   height: 100%;
   width: 100%;
