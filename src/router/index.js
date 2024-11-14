@@ -6,7 +6,6 @@ import AboutView from '@/views/AboutView.vue'
 import ContactView from '@/views/ContactView.vue'
 import GalleryView from '@/views/GalleryView.vue'
 import ProjectDetail from '@/views/ProjectDetailView.vue'
-import ProjectOne from '@/views/ProjectOne.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,12 +35,6 @@ const router = createRouter({
       name: 'project-detail',
       component: ProjectDetail,
       props: true,
-    },
-    {
-      path: '/projects/den-blaa-festival',
-      name: 'den blaa festival',
-      props: true,
-      component: ProjectOne,
     },
   ],
   scrollBehavior(to, from, savedPosition) {
