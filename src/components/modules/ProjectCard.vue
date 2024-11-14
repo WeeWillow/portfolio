@@ -28,7 +28,7 @@
     return Object.values(tags).flat();
   };
 
-  const coverImageURL = `/assets/img/${props.project.cover}`;
+  const coverImageURL = `/assets/cases/${props.project.cover}`;
   
 </script>
 
@@ -125,6 +125,12 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        object-position: top;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1) rotate(-3deg);
+        }
       }
     }
   }
