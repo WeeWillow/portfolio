@@ -6,103 +6,31 @@ import ContactForm from '@/components/modules/ContactForm.vue';
 
 <template>
   <section>
-    <article class="neum raisedPlatform">
-      <div class="contact-cover">
-        <img src="/assets/img/sunflowers.jpg" alt="field of sunflowers, credit to kilarov zaneit, unsplash">
-      </div>
-      
-      <div class="cover-content">
-        <h1>Skal vi arbejde sammen?</h1>
-      </div>
-  
-      <section class="contact-form">
-        <ContactForm />
-      </section>
-    </article>
+    <h1>Skal vi arbejde sammen?</h1>
+    <ContactForm />
   </section>
 </template>
 
 <style scoped lang="scss">
-
-article {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-
-  position: relative;
-}
-
-.raisedPlatform {
-  display: grid;
-  grid-template-columns: var(--base-200) 1fr .7fr var(--base-200);
-  grid-template-rows: var(--base-200) 1fr var(--base-200);
-  gap: var(--base);
-
-  border-radius: var(--round-general);
-}
-
-.contact-cover {
-  position: absolute;
-  z-index: 1;
-
-  grid-column: 1 / 3;
-  grid-row: 1 / -1;
-
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-    filter: sepia(.3) opacity(.45) contrast(.25) blur(1px);
-    mix-blend-mode: color-dodge;
+section {
+  h1 {
+    text-align: center;
+    margin-bottom: var(--base-200);
   }
-}
-
-[data-theme="light"] {
-  .contact-cover {
-    background: var(--primary-500) ;
-  }
-}
-
-[data-theme="dark"] {
-  .contact-cover {
-    background: var(--primary-300) ;
-  }
-}
-
-
-.cover-content, .contact-form {
-  grid-row: 2;
-}
-
-.cover-content {
-  grid-column: 2;
-
-  position: absolute;
-  z-index: 2;
-}
-
-.contact-form {
-  grid-column: 3;
+  min-width: 50vw;
+  max-width: 80vw;
+  padding: 0 var(--base-900);
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
-  .raisedPlatform {
-    grid-template-columns: var(--base-150) 1fr .7fr var(--base-150);
-    grid-template-rows: var(--base-150) 1fr var(--base-150);
-    gap: var(--base-150);
-  }
+ section {
+   h1 {
+     font-size: var(--base-200);
+   }
+  width: 100vh;
+  padding: 0;
 }
-
-@media screen and (max-width: 900px) {
-  .raisedPlatform {
-    grid-template-columns: var(--base) 1fr .7fr var(--base);
-    grid-template-rows: var(--base-75) 1fr var(--base-75);
-    gap: var(--base);
-  }
+  
 }
 </style>
