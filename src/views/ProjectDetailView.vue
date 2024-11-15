@@ -6,6 +6,8 @@ import { cases } from '@/assets/data/case_data';
 const route = useRoute();
 const project = ref(null);
 
+
+// define slug prop for dynamic route
 const props = defineProps({
   slug: String,
 });
@@ -19,10 +21,13 @@ const headerImg = computed(() => {
     : '';  // if no image, return empty string
 });
 
+// find project from slug in route
 onMounted(() => {
   const slug = route.params.slug;
+  // check for project in data
   project.value = cases.find(p => p.slug === slug);
 });
+
 </script>
 
 <template>
@@ -52,31 +57,67 @@ onMounted(() => {
   </div>
 </section>
 
-
 <section v-else>
   <p>Project not found.</p>
 </section>
 
 <article v-if="project" v-for="article in project.articles" :key="article.id" >
-  <h2>{{ article.title }}</h2>
-  <section v-for="section in article.sections" :key="section.id">
-    <h3>{{ section.title }}</h3>
-    <p>{{ section.content }}</p>
+  <h2 class="centered">{{ article.title }}</h2>
+  <section v-for="section in article.sections" :key="section.id" class="sections">
+    <div class="content">
+      <h3>{{ section.title }}</h3>
+      <p>{{ section.content }}</p>
+    </div>
+    <img v-if="section.img" :src="section.img" :alt="section.img">
   </section>
 </article>
-
-
-
 </template>
 
 <style scoped lang='scss'>
+.centered {
+  text-align: center;
+}
+
+article {
+  .sections {
+    margin: var(--base-300) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--base-200);
+    
+    img {
+      height: 500px;
+      width: 80%;
+      object-fit: contain;
+      border-radius: var(--round-min);
+    }
+
+    .content {
+      margin: 0 auto;
+      width: 70ch;
+    }
+    p {
+      color: var(--accent-700);
+      max-width: 50ch;
+    }
+    h3 {
+      margin: var(--base-75) 0;
+      text-align: center;
+      font-size: var(--base-150);
+      color: var(--accent-700);
+    }
+  }
+}
+.project-detail {
+  height: 70vh;
+}
 
 .header-content {
   padding: 0 var(--base);
   display: flex;
   gap: var(--base-200);
   justify-content: space-between;
-  // height: 60vh;
   width: 100%;
   
   img {
@@ -129,9 +170,7 @@ onMounted(() => {
   }
 }
 
-.project-detail {
-  padding: 20px;
-}
+
 h1 {
   margin: 0 0 var(--base-300) 0;
 }
