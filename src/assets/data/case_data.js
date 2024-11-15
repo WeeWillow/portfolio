@@ -177,44 +177,73 @@ export const cases = [
     },
     intro: {
       case: 'Jeg har udviklet en hjemmeside for en klient, der ønsker at vise film online. Klienten har allerede et simpelt API, der fungerer som mellemled mellem hjemmesiden og dataleverandøren. Dataleverandøren ejer alle klientens data, herunder film, produkter og medieindhold.',
-      solution: 'Jeg har udviklet en responsiv hjemmeside, der præsenterer et overskueligt overblik over trending film. Hjemmesiden er bygget med Vue.js 3, og jeg har benyttet Vite som build-tool og Vue Router til navigation. Designet er skræddersyet med HTML og CSS. Ved at klikke på en film, ledes brugeren til en detaljeret side med relevant information hentet direkte fra API\'et.',
+      solution: 'Jeg har udviklet en responsiv hjemmeside, der præsenterer et overskueligt overblik over trending film. Hjemmesiden er bygget med Vue.js 3, og jeg har benyttet Vite som build-tool og Vue Router til navigation. Designet er skabt med HTML og CSS. Ved at klikke på en film, ledes brugeren til en detaljeret side med relevant information hentet direkte fra API\'et.',
       img: 'cine-seekers-img.png',
     },
     articles: [
       {
         id: 1,
-        title: 'Project Overview',
+        title: 'API & Data',
         sections: [
           {
             id: 1,
-            title: 'Introduction',
-            content: 'This is the introduction to the project.'
+            title: 'API',
+            content: 'Projektet benytter sig af et eksternt API, som kræver autentificering via enten et Access Token eller et Bearer Token. Disse tokens er unikke for hver bruger og skal opbevares sikkert. For at beskytte disse sensitive oplysninger, er de gemt i en .env.local fil, som ikke inkluderes i det offentlige Git repository. En detaljeret README.md fil er inkluderet i projektet. Denne fil indeholder instruktioner til hvordan man opretter sit eget token hos API-udbyderen, konfigurerer .env.local filen og kører projektet lokalt.',
+            img: '/assets/img/api-token.png',
           },
           {
             id: 2,
-            title: 'Details',
-            content: 'This section contains project details.'
-          },
-          {
-            id: 3,
-            title: 'Conclusion',
-            content: 'This is the conclusion of the project.'
+            title: 'Fetch',
+            content: 'For at trække data ud, til brug i koden, benyttede jeg mig af Fetch-funktionen.',
+            img: '/assets/img/fetch.png',
           },
         ],
       },
       {
         id: 2,
-        title: 'User Research',
+        title: 'Trending Film',
         sections: [
           {
-            id: 4,
-            title: 'Methodology',
-            content: 'This section explains the user research methodology used.'
+            id: 1,
+            title: 'Featured',
+            content: 'Klienten havde en del ønskede funktioner, som jeg afgrænsede til projektet. For at hente film, startede jeg med API\'ets "discover movies", hvor standard mængden af film er et array af 20. Jeg benytter slice-funktionen, for at beskære antallet ned til hhv. 5 og 7, afhængig af skærmstørrelse. Den første film fra API\'et bruges til featured film på forsiden, og de resterende 4 og 6 film findes under "Trending Films".',
+            img: '/assets/img/featured.png',
           },
           {
-            id: 5,
-            title: 'Findings',
-            content: 'This section outlines the findings from user research.'
+            id: 2,
+            title: 'Trending',
+            content: 'Efter at have anvendt slice-funktionen til at reducere datasættet, itererer jeg over det resulterende array. For hver film oprettes et objekt, der indeholder titlen, cover-billedet og ID\'et. Objekterne anvendes derefter til at dynamisk generere HTML-elementer. Hvert film-element indeholder et billede, titlen og fungerer som et card eller en knap, der fører til en detaljeret side for den pågældende film.',
+            img: '/assets/img/trending.png',
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: 'Genre',
+        sections: [
+          {
+            id: 1,
+            title: 'Filtrering på genrer',
+            content: 'Klienten ønskede at fremhæve udvalgte genre på hjemmesiden, med film fra hver genre, samt det totale antal af film. Udover at bruge fetch-funktionen, filtreres der, så kun de udvalgte genres (Action, Comedy, Thriller, War, Romance, Drama, Crime, Documentary, Horror) data trækkes ud. Push-funktionen bruges for at gemme "trending film", hvorefter der også hentes data om antal.',
+            img: '/assets/img/genre-amount.png',
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: 'Opsummering',
+        sections: [
+          {
+            id: 1,
+            title: 'Slutresultatet',
+            content: 'Med tanke på at dette projekt var min først tur med Vue, så er jeg tilfreds. Der er en del mangler, og med presset tid, så er jeg ikke helt vild med designet. Da dette var del af en praktikansøgningsprocess, hvor fokus mere lå på code, var jeg nød til at afgrænse design delen. Den kode som jeg nåede at realisere - forside med trending film, film fra specifikke genre, en oversigts side af det fulde array, og enkelt film side - fungerer godt, siden er hurtig og overordnet responsiv.',
+            img: '/assets/img/cine-slut.jpeg',
+          },
+          {
+            id: 2,
+            title: 'Videreudvikle',
+            content: 'Cine Seekers er en meget fin v1, men jeg kunne godt tænke mig at udvikle mere på den. Der skulle have været flere oplysninger på de enkelte film, som direktører, skuespillere og en trailer. Derudover var det mening at man kunne gemme film til en "watchlist", og klikke ind på hver genre. Designer har nogle mangler, og kunne optimeres. Overordnet set, så er det et godt stykke arbejde på lige rundt en uges tid, med undervisning imellem.',
+            img: null,
           },
         ],
       },
@@ -248,17 +277,20 @@ export const cases = [
           {
             id: 1,
             title: 'Introduction',
-            content: 'This is the introduction to the project.'
+            content: 'This is the introduction to the project.',
+            img: '/assets/img/affinity-diagram.png',
           },
           {
             id: 2,
             title: 'Details',
-            content: 'This section contains project details.'
+            content: 'This section contains project details.',
+            img: '/assets/img/affinity-diagram.png',
           },
           {
             id: 3,
             title: 'Conclusion',
-            content: 'This is the conclusion of the project.'
+            content: 'This is the conclusion of the project.',
+            img: '/assets/img/affinity-diagram.png',
           },
         ],
       },
@@ -269,12 +301,14 @@ export const cases = [
           {
             id: 4,
             title: 'Methodology',
-            content: 'This section explains the user research methodology used.'
+            content: 'This section explains the user research methodology used.',
+            img: '/assets/img/affinity-diagram.png',
           },
           {
             id: 5,
             title: 'Findings',
-            content: 'This section outlines the findings from user research.'
+            content: 'This section outlines the findings from user research.',
+            img: '/assets/img/affinity-diagram.png',
           },
         ],
       },
