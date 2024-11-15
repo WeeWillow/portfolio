@@ -242,7 +242,7 @@ export const cases = [
           {
             id: 2,
             title: 'Videreudvikle',
-            content: 'Cine Seekers er en meget fin v1, men jeg kunne godt tænke mig at udvikle mere på den. Der skulle have været flere oplysninger på de enkelte film, som direktører, skuespillere og en trailer. Derudover var det mening at man kunne gemme film til en "watchlist", og klikke ind på hver genre. Designer har nogle mangler, og kunne optimeres. Overordnet set, så er det et godt stykke arbejde på lige rundt en uges tid, med undervisning imellem.',
+            content: 'Cine Seekers er en meget fin v1, men jeg kunne godt tænke mig at udvikle mere på den. Jeg ville gerne have tilføjet flere oplysninger som instruktører, skuespillere og trailere til de enkelte film. Derudover var det mening at man kunne gemme film til en "watchlist", og klikke ind på hver genre. Designer har nogle mangler, og kunne optimeres. Overordnet set, så er det et godt stykke arbejde på lige rundt en uges tid, med undervisning imellem.',
             img: null,
           },
         ],
@@ -265,50 +265,80 @@ export const cases = [
       approach: ['Desktop-first'],
     },
     intro: {
-      case: 'noget om casen. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum distinctio amet, debitis reprehenderit eum quasi soluta harum perferendis ea quisquam? Iure quo, quasi at molestiae quas qui? Recusandae, expedita soluta.',
-      solution: 'hvordan løste vi det. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum distinctio amet, debitis reprehenderit eum quasi soluta harum perferendis ea quisquam? Iure quo, quasi at molestiae quas qui? Recusandae, expedita soluta.',
+      case: 'Sejr & Davidsens Dyrepension og -internat er en dyrepension i Nordjylland, hvor hunde- og katteejere kan booke pasning til deres kæledyr. Virksomheden ønsker at forbedre deres service ved at tilbyde en online platform, der gør det nemmere for kunderne at booke ophold og få adgang til vigtig information om dyrepensionen. Den manglende online tilstedeværelse gør det tidskrævende for kunderne at få svar på deres spørgsmål og planlægge ophold, hvilket skaber udfordringer for både ejere og virksomhed.',
+      solution: 'For at opfylde behovet for digital tilgængelighed skabte vi en brugervenlig hjemmeside ved hjælp af et skræddersyet WordPress-tema, der giver Sejr & Davidsen fuld kontrol over indholdsstyringen. Platformen gør det nemt for kunder at finde information om internatets dyr og få støtte til adfærdstræning, hvilket sikrer en effektiv og problemfri oplevelse for både kæledyrsejere og personalet på internatet.',
       img: 'sejr-davidsen-img.png',
     },
     articles: [
       {
         id: 1,
-        title: 'Project Overview',
+        title: 'WordPress',
         sections: [
           {
             id: 1,
-            title: 'Introduction',
-            content: 'This is the introduction to the project.',
-            img: '/assets/img/affinity-diagram.png',
+            title: 'Tema',
+            content: 'Projektet omhandler skabelsen af et custom WordPress Tema. At arbejde med WordPress kræver en løsning til at håndtere server-side-sprog - i dette tilfælde PHP. Vi arbejdede i Local By Flywheel, et lokalt PHP environment. WordPress kan være meget specifik med navngivning, og ens tema billede skal hedde "screenshot.png".',
+            img: '/assets/img/theme.png',
           },
           {
             id: 2,
-            title: 'Details',
-            content: 'This section contains project details.',
-            img: '/assets/img/affinity-diagram.png',
-          },
-          {
-            id: 3,
-            title: 'Conclusion',
-            content: 'This is the conclusion of the project.',
-            img: '/assets/img/affinity-diagram.png',
+            title: 'Formål',
+            content: 'Et WordPress tema er mere end bare visuelt. Det indholder ofte unikke eller skræddersyede post types, og forskellige plugins og indstillinger. Til Sejr & Davidsenvar målet at skabe et tema, der kunne bruges uden særlig teknisk viden.',
+            img: '/assets/img/custom-post.png',
           },
         ],
       },
       {
         id: 2,
-        title: 'User Research',
+        title: 'The Basics',
         sections: [
           {
-            id: 4,
-            title: 'Methodology',
-            content: 'This section explains the user research methodology used.',
-            img: '/assets/img/affinity-diagram.png',
+            id: 1,
+            title: 'Opsætning',
+            content: 'Inden vi gjorde noget som helt med WordPress, Local eller PHP, så arbejde vi med gode gamle HTML, CSS og en smule JavaScript. Ud fra mock-ups lavet tidligere i processen, gik vi i gang med at kode designet, mere eller mindre som en template.',
+            img: null,
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: 'php: Hypertext Preprocessor',
+        sections: [
+          {
+            id: 1,
+            title: 'functions.php',
+            content: 'Linkning af forskellige filer kræver oprettelsen af en functions.php-fil i WordPress. Denne fil håndterer både CSS, styling og JavaScript, og den sikrer også import af font-awesome, som er et ikonbibliotek brugt i grænsefladen.',
+            img: '/assets/img/functions-php.png',
           },
           {
-            id: 5,
-            title: 'Findings',
-            content: 'This section outlines the findings from user research.',
-            img: '/assets/img/affinity-diagram.png',
+            id: 2,
+            title: 'Template filer',
+            content: 'WordPress-temaer er bygget op omkring en række template-filer, der tilsammen udgør sidens struktur. Hver fil har en specifik funktion - eksempelvis bruges header.php til sidens header, footer.php til footeren og single.php til visning af enkelte indlæg. Ved at opdele strukturen i forskellige templates gjorde vi det muligt at tilpasse layoutet og funktionaliteten for forskellige sidetyper. Denne tilgang giver en større fleksibilitet i designet og gør det lettere at vedligeholde og udvide temaet.',
+            img: null,
+          },
+          {
+            id: 3,
+            title: 'Custom Post Types',
+            content: 'For at imødekomme Sejr & Davidsens behov for selv at kunne oprette, ændre og opdatere opslag om hunde i internatet, oprettede vi en custom post type kaldet "dog". Denne post type giver dem fuld kontrol over indholdet, så de nemt kan administrere oplysninger om de enkelte hunde uden at skulle ændre i kode. Vi aktiverede et arkiv for denne post type, hvilket gør det muligt at have en side, der viser alle hunde samlet. Denne arkivside giver brugerne et overblik over hunde til adoption og gør det nemt at finde detaljerede oplysninger. Custom post typen er synlig i WordPress REST API\'et, hvilket åbner op for muligheden for fremtidige udvidelser. Ved at tilføje et "dashicons-pets"-ikon i menuen bliver det også intuitivt og nemt at finde hundeindlæg i WordPress\' adminpanel.',
+            img: '/assets/img/custom-post-type.png',
+          },
+          {
+            id: 4,
+            title: 'Custom Query',
+            content: 'For at gøre hjemmesiden mere dynamisk, implementerede vi flere WordPress funktioner. Et while-loop på hundesiden viser automatisk de nyeste hundeopslag, så snart de oprettes, hvilket sparer tid og kræver mindre vedligeholdelse. På adoptionsproces siden lavede vi en custom query for at håndtere trinene i adoptionsforløbet, hvilket gør, at alle opslag vises i korrekt rækkefølge og opdateres automatisk. WP_Query blev brugt til at hente et antal hunde pr. gang, sorteret alfabetisk efter titel, hvilket gør præsentationen fleksibel og tilpasset sidens behov.',
+            img: '/assets/img/custom-query.png',
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: 'Opsummering',
+        sections: [
+          {
+            id: 1,
+            title: 'WordPress og php',
+            content: 'Sejr & Davidsen er første gang, jeg arbejder med både et WordPress tema og PHP. Der er dele af projektet, som jeg er overvejende tilfreds med. Undervejs føltes det meste meningsfuldt, og jeg har lært rigtig meget i processen. Generelt er jeg glad for, hvordan WordPress og PHP-delen udviklede sig, og jeg spillede en aktiv rolle i opbygningen. Hvor projektet måske ikke helt ramte målet, er på designfronten. Det var ikke gruppens primære fokus, men jeg tror, at det ville være relativt nemt at opdatere det nu, baseret på det, vi har lært.',
+            img: null,
           },
         ],
       },
