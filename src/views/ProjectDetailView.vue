@@ -46,7 +46,7 @@ onMounted(() => {
         </section>
         <div class="header-btns">
           <a class="neum-hover" :href="project.github" target="_blank" rel="noopener noreferrer">GitHub <font-awesome-icon class="icon" icon="fa-brands fa-github"/></a>
-          <a class="neum-hover" :href="project.live_demo" target="_blank" rel="noopener noreferrer">Live Demo <font-awesome-icon class="icon" icon="fa-solid fa-external-link-alt"/></a>
+          <!-- <a class="neum-hover" :href="project.live_demo" target="_blank" rel="noopener noreferrer">Live Demo <font-awesome-icon class="icon" icon="fa-solid fa-external-link-alt"/></a> -->
         </div>
       </article>
       <!-- check if there is a header img -->
